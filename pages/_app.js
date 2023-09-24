@@ -7,6 +7,7 @@ import Layout from '../components/Layout';
 import { Globals, useReducedMotion } from '@react-spring/web';
 import { useEffect } from 'react';
 import { useScrollRestoration } from '../components/hooks';
+import { Analytics } from '@vercel/analytics/react';
 
 //override mdx components
 const components = {
@@ -53,11 +54,14 @@ export default function MyApp({ Component, pageProps, router }) {
     }
   }, [reduceMotion])
 
-  useScrollRestoration(router)
+  useScrollRestoration(router) //Makes it so that you don't land on the top of the page when you hit the back button in the browser
 
   return (
+    <>
     <MDXProvider components={components}>
       <Component {...pageProps}/>
     </MDXProvider>
+    <Analytics/>
+    </>
   )
 }   

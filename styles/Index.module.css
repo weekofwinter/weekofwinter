@@ -93,7 +93,7 @@
 .addOnCards {
     display: flex;
     gap: 1rem;
-    overflow-x: scroll;
+    overflow-x: auto;
     margin-inline:calc(var(--padding-inline) * -1);
     padding-inline: var(--padding-inline);
 }
