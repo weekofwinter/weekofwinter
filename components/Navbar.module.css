@@ -61,12 +61,13 @@
 }
 
 .logoShadow {
-    top: 0;
+    top: -1px;
     position: absolute;
     z-index: 9998;
-    box-shadow: 30px 22px 40px 38px var(--ww-color);
+    box-shadow: 21.5px 25px 35px 30px var(--ww-color);
     height:1px;
-    width:1px;
+    width:20px;
+    background-color: transparent;
 }
 
 .logoContainer, .burger {

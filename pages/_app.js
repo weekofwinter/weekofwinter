@@ -58,10 +58,10 @@ export default function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
-    <MDXProvider components={components}>
-      <Component {...pageProps}/>
-    </MDXProvider>
-    <Analytics/>
+      <MDXProvider components={components}>
+        <Component {...pageProps}/>
+      </MDXProvider>
+      <Analytics/>
     </>
   )
 }   
