@@ -161,9 +161,7 @@ export default function HomePage() {
 
   const meta = {
     title:"Week of Winter - Uppsalas skidförening för studenter",
-    description:`Ideell skidförening av studenter för studenter i Uppsala. Varje år i januari arrangerar vi en 
-                maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. 
-                Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv.`,
+    description:"Ideell skidförening av studenter för studenter i Uppsala. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv.",
     keywords:"Student, Studentliv, Uppsala, Uppsala universitet, Skidor, Alperna, SLU, Vinter, UTN",
     structuredData: {
       "@context": "https://schema.org",
