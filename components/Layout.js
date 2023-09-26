@@ -1,11 +1,10 @@
-import Head from 'next/head'
 import React, { useState } from 'react'
 import Navbar from './Navbar'
-import Footer from './Footer'
 import Image from 'next/image'
 import s from "./Layout.module.css"
 import PropTypes from 'prop-types';
 import { useSpring, animated } from '@react-spring/web'
+import RootLayout from './RootLayout'
 
 
 
@@ -36,16 +35,7 @@ export default function Layout({
   //<Emoji className={s.emoji} symbol={meta.emoji} label={meta.title}/>
 
   return (
-    <>
-      <Head>
-        <title>{`${meta.title} - Week of Winter`}</title>
-        <meta name="description" content={meta.description} key="desc"/>
-        <meta name="keywords" content={meta.keywords} key="keyword"/>
-        <meta name="og:description" content={meta.description} key="og:desc"/>
-        <meta name="og:image" content={meta.image}/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" key="viewport"/>
-        <link rel="shortcut icon" href="/favicon.ico"/>
-      </Head>
+    <RootLayout meta={meta}>
       <Navbar/>
       <main className={s.main}>
         {meta.image ? 
@@ -71,8 +61,7 @@ export default function Layout({
           {children}
         </article>
       </main>
-      <Footer/>
-    </>
+    </RootLayout>
   )
 }
 

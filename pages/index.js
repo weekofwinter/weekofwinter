@@ -10,12 +10,10 @@ import Snow from '../components/Snow';
 import { TypeAnimation } from 'react-type-animation';
 import { animated, useSpring, config, useInView } from "@react-spring/web";
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import s from "../styles/Index.module.css"
 import InfoBox from '../components/InfoBox';
 import FAQ from '../components/Faq';
 import Countdown from '../components/Countdown';
-import Head from 'next/head';
 import PriceCard from '../components/PriceCard';
 import InfoCard from '../components/InfoCard';
 import Ticket from "../icons/ticket.svg"
@@ -29,6 +27,7 @@ import tripImage from "../public/image/trip.webp"
 import DivideContainer from '../components/DivideContainer';
 import AnimatedContainer from '../components/AnimatedContainer';
 import TripDescription from '../components/TripDescription.mdx'
+import RootLayout from '../components/RootLayout';
 
 //debounce to not change the parallax on every pixel
 /*
@@ -161,24 +160,24 @@ const ParallaxEffect = () => {
 export default function HomePage() {
 
   const meta = {
-    title:"Week of Winter - Skidförening för studenter i Uppsala",
-    description:`Skidföreningen Week of Winter är en ideell förening av studenter för studenter i Uppsala. 
-                Varje år i januari  arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga 
-                skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart 
-                skidåkning till Uppsalas studentliv.`,
+    title:"Week of Winter - Uppsalas skidförening för studenter",
+    description:`Ideell skidförening av studenter för studenter i Uppsala. Varje år i januari arrangerar vi en 
+                maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. 
+                Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv.`,
     keywords:"Student, Studentliv, Uppsala, Uppsala universitet, Skidor, Alperna, SLU, Vinter, UTN",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "legalName": "Week of Winter",
+      "name": "Week of Winter",
+      "location": "Uppsala, Sverige",
+      "url" : "https://weekofwinter.se/",
+      "logo": "https://www.weekofwinter.se/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.82bd4769.webp&w=256&q=75"
+    }
   }
 
   return (
-    <>
-    <Head>
-      <title>{meta.title}</title>
-      <meta name="description" content={meta.description} key="desc"/>
-      <meta name="keywords" content={meta.keywords} key="keyword"/>
-      <meta name="og:description" content={meta.description} key="og:desc"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" key="viewport"/>
-      <link rel="shortcut icon" href="/favicon.ico"/>
-    </Head>
+    <RootLayout meta={meta} >
     <main>
       <Navbar stickyOffset/>
       <ParallaxEffect/>
@@ -406,8 +405,7 @@ export default function HomePage() {
        </div>
       </article>
     </main>
-    <Footer/>
-    </>
+    </RootLayout>
   );
 }
 
