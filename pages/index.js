@@ -159,18 +159,25 @@ const ParallaxEffect = () => {
 
 export default function HomePage() {
 
+  const desc = "Ideell skidförening av studenter för studenter i Uppsala. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv.";
+
   const meta = {
     title:"Week of Winter - Uppsalas skidförening för studenter",
-    description:"Ideell skidförening av studenter för studenter i Uppsala. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv.",
+    description: desc,
     keywords:"Student, Studentliv, Uppsala, Uppsala universitet, Skidor, Alperna, SLU, Vinter, UTN",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "legalName": "Week of Winter",
       "name": "Week of Winter",
-      "location": "Uppsala, Sverige",
       "url" : "https://weekofwinter.se/",
-      "logo": "https://www.weekofwinter.se/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.82bd4769.webp&w=256&q=75"
+      "location": "Uppsala, Sverige",
+      "logo": "/logo.webp",
+      "description":desc,
+      "sameAs":[
+        "https://www.instagram.com/weekofwinter/", 
+        "https://www.facebook.com/Wofwinter",
+        "https://www.tiktok.com/@weekofwinter/"
+      ]
     }
   }
 
