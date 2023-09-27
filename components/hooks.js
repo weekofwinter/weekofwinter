@@ -140,7 +140,7 @@ const useScrollspy = (ids, offset= 0) => {
 
   useLayoutEffect(() => {
     const listener = () => {
-      const scroll = window.pageYOffset;
+      const scroll = window.scrollY;
 
       const position = ids
         .map((id) => {

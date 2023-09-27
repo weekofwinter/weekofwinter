@@ -153,12 +153,14 @@ export default function Navbar({stickyOffset}) {
   }
 
   //Used to recurively create the navigation links
+
   const Tree = React.memo(({links, activeId="", topLevel = false, open = false}) => {
     const [isOpen, setOpen] = useState(open)
     const refAnimatedChildren= useRef(null)
     const refChildren = useRef(null)
 
     const IconName = isOpen ? Minus : Plus
+    console.log(isOpen)
 
     const springs = useSpring({
       from: {
@@ -169,6 +171,8 @@ export default function Navbar({stickyOffset}) {
         height:isOpen && refChildren.current ? refChildren.current.offsetHeight + 18 : 0,
         overflow:"hidden"
       },
+      onStart: !isOpen && (typeof window !== "undefined" ? !window.matchMedia(mobileStyle).matches : null) 
+               && overlay.current ? overlay.current.classList.add(s.invisible) : null, //Very nice
       immediate: isOpen || (typeof window !== "undefined" ? window.matchMedia(mobileStyle).matches : null) ? false : true,
       onRest: !isOpen && refAnimatedChildren.current ? refAnimatedChildren.current.classList.remove(s.topLevelChildrenPadding):null
     })
@@ -191,7 +195,6 @@ export default function Navbar({stickyOffset}) {
       if(window.matchMedia(mobileStyle).matches) return
       refAnimatedChildren.current ? refAnimatedChildren.current.classList.add(s.topLevelChildrenPadding):null
       setOpen(true)
-
 
       overlay.current.classList.remove(s.invisible)
     }
