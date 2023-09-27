@@ -18,7 +18,7 @@ const links = [
     href:"/#om"
   },
   {
-    name:"Årets Resa",
+    name:"Årets resa",
     href:"/#arets-resa"
   },
   {
@@ -160,7 +160,6 @@ export default function Navbar({stickyOffset}) {
     const refChildren = useRef(null)
 
     const IconName = isOpen ? Minus : Plus
-    console.log(isOpen)
 
     const springs = useSpring({
       from: {

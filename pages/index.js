@@ -363,7 +363,7 @@ export default function HomePage() {
                 {
                   q:"När går det att boka boende?",
                   a:"Bokandet av boende öppnar ungefär i mitten av November och mer information kommer ungefär två veckor innan bokningen öppnar"
-                }
+                },
               ]}
             />
           </section>

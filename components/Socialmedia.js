@@ -23,11 +23,13 @@ export default function Socialmedia({width, height, animation = true}) {
       type:<Instagram width={width} height={height}/>,
       href: "https://www.instagram.com/weekofwinter/",
     },
+    /*
     {
       label:"Tiktok",
       type:<TikTok width={width} height={height}/>,
       href: "https://www.tiktok.com/@weekofwinter/",
     },
+    */
   ]
 
   const [ref, springs] = useInView(
