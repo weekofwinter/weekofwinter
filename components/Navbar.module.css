@@ -39,9 +39,7 @@
 .overlay {
     backdrop-filter: blur(15px);
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    inset: 0px;
     height: 100vh;
     z-index: 998;
     animation: 0.2s linear 0s 1 normal forwards running overlayAn;
@@ -95,8 +93,6 @@
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
     width: 100%;
     z-index: 999;
     background: var(--menu-mobile-background-color);
@@ -148,6 +144,7 @@
 @media only screen and (min-width: 640px) {
     .container {
         max-width: 400px;
+        height: 100vh;
     }
 }
 
