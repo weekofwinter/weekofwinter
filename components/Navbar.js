@@ -57,7 +57,6 @@ const links = [
   },
 ]
 
-let lastScrollTop = 0
 //The navigation bar that is shown all the time on the top
 export default function Navbar({stickyOffset}) {
 
@@ -108,7 +107,6 @@ export default function Navbar({stickyOffset}) {
 
   function nonScrollable(noScroll) {
     //Find how long down the user has scrolled on the page
-    const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
     const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth
 
     //makes the menu non-scrollable
@@ -126,9 +124,7 @@ export default function Navbar({stickyOffset}) {
       document.body.style.cssText = ""
       nav.current.style.cssText=""
       overlay.current ? overlay.current.classList.add(s.invisible) : null
-      window.scrollTo(0, lastScrollTop)
     }
-    lastScrollTop = scrollTop
   }
 
 
