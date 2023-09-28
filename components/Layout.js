@@ -73,7 +73,7 @@ Layout.propTypes = {
     /**
      * A link to a hosted image
      */
-    image: PropTypes.string,
+    image: PropTypes.object,
     /** 
      * A emoji 
     */
