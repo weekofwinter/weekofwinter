@@ -159,7 +159,7 @@ const ParallaxEffect = () => {
 
 export default function HomePage() {
 
-  const desc = "Ideell skidförening av studenter för studenter i Uppsala. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv.";
+  const desc = "Week of Winter är en ideell skidförening av studenter för studenter som studerar på Uppsala universitet eller SLU. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv. Vi ser fram emot att hänga och skåla med er i Alperna. Vi ses där!";
 
   const meta = {
     title:"Week of Winter - Uppsalas skidförening för studenter",
@@ -198,10 +198,7 @@ export default function HomePage() {
                 </AnimatedContainer>
                 <AnimatedContainer>
                 <p className={s.about}>
-                  Skidföreningen Week of Winter är en ideell förening av studenter för studenter i Uppsala. 
-                  Varje år i januari  arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga 
-                  skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart 
-                  skidåkning till Uppsalas studentliv. Vi ser fram emot att hänga och skåla med er i Alperna. Vi ses där!
+                  {desc}
                 </p>
                 </AnimatedContainer>
               </>
