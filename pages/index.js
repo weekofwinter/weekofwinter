@@ -161,6 +161,7 @@ export default function HomePage() {
 
   const desc = "Week of Winter är en ideell skidförening av studenter för studenter på Uppsala universitet och SLU. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv. Vi ser fram emot att hänga och skåla med er i Alperna. Vi ses där!";
 
+  //VIKTIGT att uppdatera om något ändras så att det blir rätt på Google/Bing 
   const meta = {
     title:"Week of Winter - Uppsalas skidförening för studenter",
     description: desc,
@@ -171,7 +172,7 @@ export default function HomePage() {
       "name": "Week of Winter",
       "url" : "https://weekofwinter.se/",
       "location": "Uppsala, Sverige",
-      "logo": "/logo.webp",
+      "logo": "https://weekofwinter.se/logo.webp",
       "description":desc,
       "sameAs":[
         "https://www.instagram.com/weekofwinter/", 
