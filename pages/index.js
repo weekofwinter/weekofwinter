@@ -341,7 +341,7 @@ export default function HomePage() {
               questions={[
                 {
                   q:"Vad är Week of Winter?",
-                  a:"Week of Winter är en skidförening för Uppsalas studenter med fokus på teknologer och naturvetare!"
+                  a:"Week of Winter är en ideell skidförening av studenter för studenter som pluggar på Uppsala universitet eller SLU."
                 },
                 {
                   q:"Vem får följa med?",
