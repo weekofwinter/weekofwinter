@@ -159,7 +159,7 @@ const ParallaxEffect = () => {
 
 export default function HomePage() {
 
-  const desc = "Week of Winter är en ideell skidförening av studenter för studenter som studerar på Uppsala universitet eller SLU. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv. Vi ser fram emot att hänga och skåla med er i Alperna. Vi ses där!";
+  const desc = "Week of Winter är en ideell skidförening av studenter för studenter på Uppsala universitet och SLU. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv. Vi ser fram emot att hänga och skåla med er i Alperna. Vi ses där!";
 
   const meta = {
     title:"Week of Winter - Uppsalas skidförening för studenter",
@@ -210,7 +210,7 @@ export default function HomePage() {
             <Trip
               title="Val-d'Isère 2024"
               date="12 Jan – 21 Jan"
-              ticket="Anmälan öppnar 2023-09-29 kl 12:00"
+              ticket="Anmälan öppnar 2023-09-29 kl 12:30"
               place="Val-d'Isère, Frankrike"
               placeLink="https://goo.gl/maps/ra6y4Cr82uSyJ2bM7"
               description={
@@ -338,7 +338,7 @@ export default function HomePage() {
               questions={[
                 {
                   q:"Vad är Week of Winter?",
-                  a:"Week of Winter är en ideell skidförening av studenter för studenter som pluggar på Uppsala universitet eller SLU."
+                  a:"Week of Winter är en ideell skidförening av studenter för studenter på Uppsala universitet och SLU. Varje år arrangerar vi en maxad skidresa till Alperna, tillsammans med andra festligheter. Hoppas du följer med!"
                 },
                 {
                   q:"Vem får följa med?",
