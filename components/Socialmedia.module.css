@@ -11,3 +11,7 @@
 .iconContainer path {
     stroke: var(--text-color);
 }
+
+.inverted path {
+    stroke: var(--background-color);
+}

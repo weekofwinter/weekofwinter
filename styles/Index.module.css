@@ -126,6 +126,7 @@
 }
 
 
+
 /*Firefox engine är trash jämfört med de andras*/
 @-moz-document url-prefix() {
     .parallaxMountain {
@@ -143,6 +144,17 @@
         padding-block: 36px 0px;
         scroll-margin-top: 36px;
     }
+}
+
+.questionEmail {
+    text-decoration: none;
+    color: inherit;
+}
+
+.questionContact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 @media only screen and (min-width: 640px) {
@@ -163,6 +175,11 @@
     .addOnCards {
         flex-wrap: wrap;
         gap: 0;
+    }
+
+    .questionContact {
+        flex-direction: row;
+        align-items: center;
     }
 }
 

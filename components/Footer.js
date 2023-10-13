@@ -19,7 +19,7 @@ export default function Footer() {
       <Sponsors/>
       <footer className={s.footer}>
         <span className={s.title}>Se till och följ oss på</span>
-        <Socialmedia height="50" width="50"/>
+        <Socialmedia animation/>
         <span>
           {`© Week of Winter 2014-${new Date().getFullYear()} Uppsala`}
         </span>

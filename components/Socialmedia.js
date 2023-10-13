@@ -11,7 +11,12 @@ import TikTok from "../icons/tiktok.svg"
  * @example
  * <Socialmedia height="50" width="50" animation={false}/>
  */
-export default function Socialmedia({width, height, animation = true}) {
+export default function Socialmedia({
+  width=50, 
+  height=50, 
+  animation=false, 
+  colorInverted=false
+}) {
   const icons = [
     {
       label:"Facebook",
@@ -23,13 +28,11 @@ export default function Socialmedia({width, height, animation = true}) {
       type:<Instagram width={width} height={height}/>,
       href: "https://www.instagram.com/weekofwinter/",
     },
-    /*
     {
       label:"Tiktok",
       type:<TikTok width={width} height={height}/>,
       href: "https://www.tiktok.com/@weekofwinter/",
     },
-    */
   ]
 
   const [ref, springs] = useInView(
@@ -58,7 +61,7 @@ export default function Socialmedia({width, height, animation = true}) {
           style={{
             marginRight: i === icons.length-1 ? "0px" : null,
           }}
-          className={s.iconContainer}
+          className={`${s.iconContainer} ${colorInverted ? s.inverted : ""}`}
           href={icon.href} 
           aria-label={icon.label}
           target="_blank"

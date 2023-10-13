@@ -290,7 +290,7 @@ export default function Navbar({stickyOffset}) {
             <Tree links={links} activeId={activeId} topLevel/>
           </div>
           <div className={s.socialMedia}>
-            <Socialmedia width="50" height="50" animation={false}/>
+            <Socialmedia/>
           </div>
         </animated.div>
         <button className={s.burger} onClick={()=>mobileMenu(router.pathname)}>

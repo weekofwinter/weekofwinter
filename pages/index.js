@@ -28,6 +28,7 @@ import DivideContainer from '../components/DivideContainer';
 import AnimatedContainer from '../components/AnimatedContainer';
 import TripDescription from '../components/TripDescription.mdx'
 import RootLayout from '../components/RootLayout';
+import Socialmedia from '../components/Socialmedia';
 
 //debounce to not change the parallax on every pixel
 /*
@@ -347,7 +348,7 @@ export default function HomePage() {
                     <>
                     Studerande vid Uppsala universitet och SLU som även är medlemmar i WOW får delta på resan. 
                     <br></br>
-                    <a style={{color:"blue"}} href='https://shorturl.at/sBH13'> Bli medlem här! </a>
+                    <a style={{color:"#1d4ed8"}} href='https://shorturl.at/sBH13'> Bli medlem här! </a>
                     </>
                 },
                 {
@@ -361,6 +362,19 @@ export default function HomePage() {
                 {
                   q:"När går det att boka boende?",
                   a:"Bokandet av boende öppnar ungefär i mitten av November och mer information kommer ungefär två veckor innan bokningen öppnar"
+                },
+                {
+                  q:"Hur ska jag kontakta Week of Winter?",
+                  a: 
+                    <>
+                    <div style={{marginBottom:"1rem"}}>Kontakta oss via mail, Facebook eller Instagram. Vi svarar så snabbt som möjligt :)</div>
+                    <div className={s.questionContact}>
+                      <a href='mailto: weekofwinter@gmail.com' className={s.questionEmail}> 
+                        weekofwinter@gmail.com
+                      </a>
+                      <Socialmedia colorInverted/>
+                    </div>
+                    </>
                 },
               ]}
             />
