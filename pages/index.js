@@ -165,7 +165,7 @@ export default function HomePage() {
   const meta = {
     title:"Week of Winter - Uppsalas skidförening för studenter",
     description: desc,
-    keywords:"Student, Studentliv, Uppsala, Uppsala universitet, Skidor, Alperna, SLU, Vinter, UTN",
+    keywords:"week of winter, weekofwinter, Uppsala universitet skidförening, Skidförening Uppsala",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "Organization",
