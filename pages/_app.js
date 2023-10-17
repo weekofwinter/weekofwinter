@@ -3,11 +3,11 @@ import { Heading, Text, ResponsiveImage, NextLink, ListItem } from '../component
 import '../styles/global.css'
 import Youtube from '../components/Youtube';
 import Layout from '../components/Layout';
-//import {Kumbh_Sans} from "next/font/google";
 import { Globals, useReducedMotion } from '@react-spring/web';
 import { useEffect } from 'react';
 import { useScrollRestoration } from '../components/hooks';
 import { Analytics } from '@vercel/analytics/react';
+import { Kanit, Lato } from "next/font/google"
 
 //override mdx components
 const components = {
@@ -25,16 +25,21 @@ const components = {
   Layout,
 }
 
+const lato = Lato({
+  weight: ["400"],
+  style:["normal", "italic"],
+  subsets:["latin"],
+  display:"swap",
+  variable:"--font-lato"
+})
 
-/*
-const inter = Kumbh_Sans({ subsets: ['latin'] })
-      <style jsx global>{`
-        html {
-          font-family: ${inter.style.fontFamily};
-        }
-      `}</style>
-      */
-
+const kanit = Kanit({
+  weight: ["700", "900"],
+  style:["normal", "italic"],
+  subsets:["latin"],
+  display:"swap",
+  variable:"--font-kanit"
+})
 
 //The root of the website
 export default function MyApp({ Component, pageProps, router }) {
@@ -58,8 +63,16 @@ export default function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
+      <style jsx global>{`
+        :root {
+          --font-kanit: ${kanit.style.fontFamily};
+          --font-lato: ${lato.style.fontFamily};
+        }
+      `}</style>
       <MDXProvider components={components}>
+        <div className={kanit.variable}>
         <Component {...pageProps}/>
+        </div>
       </MDXProvider>
       <Analytics/>
     </>

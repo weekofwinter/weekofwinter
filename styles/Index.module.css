@@ -35,13 +35,9 @@
     margin-top: 5.5em;
 }
 
-.welcomeHeading, .welcomeSubheading {
-    font-family: Impact, Haettenschweiler,'Helvetica','Helvetica Neue','SF Pro Text', 'SF Pro Icons',
-      'Arial', sans-serif;
-}
-
 .welcomeHeading {
     font-size: clamp(3em, 1.5vw + 3em, 4.5em);
+    font-weight: 900;
     margin-bottom: 0;
     margin-top: 0;
     text-shadow: 0px 0px 3px black;
@@ -49,6 +45,7 @@
 
 .welcomeSubheading {
     color: black;
+    font-family: var(--font-kanit);
 }
 
 .content {
