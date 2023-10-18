@@ -38,11 +38,11 @@
 }
 
 .cardTop span, .cardTopAnimated span {
-  transform: translateY(calc(60% + 1px));
+  transform: translateY(calc(55% + 1px));
 }
 
 .cardBottom span, .cardBottomAnimated span {
-  transform: translateY(calc(-40% - 1px));
+  transform: translateY(calc(-45% - 1px));
 }
 
 .cardTop, .cardTopAnimated {
@@ -84,10 +84,10 @@
   }
 
   .cardTop span, .cardTopAnimated span {
-    transform: translateY(calc(75% + 1px));
+    transform: translateY(calc(71% + 1px));
   }
 
   .cardBottom span, .cardBottomAnimated span {
-    transform: translateY(calc(-25% - 1px));
+    transform: translateY(calc(-29% - 1px));
   }
 }
