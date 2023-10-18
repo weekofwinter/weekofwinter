@@ -26,7 +26,7 @@ const components = {
 }
 
 const lato = Lato({
-  weight: ["400"],
+  weight: ["400", "700"],
   style:["normal", "italic"],
   subsets:["latin"],
   display:"swap",
