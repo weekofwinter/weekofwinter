@@ -306,8 +306,8 @@ export default function HomePage() {
                 <InfoCard
                   title="Skidfrakt. "
                   desc="Har du egna skidor eller en snowboard som du vill ta med dig? 
-                        Då är detta ett utmärkt val för endast 99 kr om du åker buss 
-                        och 600-800 kr om du flyger (priset beror på flygbolaget)."
+                        Då är detta ett utmärkt val för endast 199 kr om du åker buss 
+                        och 799 kr om du flyger."
                   icon={<DeliveryTruck width={70} height={70}/>}
                 />
                 <InfoCard
@@ -317,7 +317,7 @@ export default function HomePage() {
                   icon={<PlusAdd width={70} height={70}/>}
                 />
                 <InfoCard
-                  title="Reseförsäkring."
+                  title="Reseförsäkring. "
                   desc="Vill du känna dig trygg under resan? Då kan du boka en 
                         reseförsäkring hos Gouda."
                   icon={<Insurance width={70} height={70}/>}

@@ -84,6 +84,8 @@ h6 {
 
 hr {
   color: var(--text-color);
+  margin-top: 2em;
+  margin-bottom: 1.6em;
 }
 
 button {
@@ -92,7 +94,12 @@ button {
 }
 
 p {
-  margin-block: calc(1em + 1ex);
+  margin-block: calc(1em + 0.5ex);
+}
+
+/*Used for mdx, may need to be changed according how the markdown is setup*/
+ul:has(div) {
+  margin-top: -0.5em;
 }
 
 a {
