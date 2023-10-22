@@ -40,7 +40,7 @@ export default function Trip({
             {ticket}
           </span>
         </AnimatedContainer>
-        <AnimatedContainer>
+        <AnimatedContainer className={s.desc}>
           {description}
         </AnimatedContainer>
       </>

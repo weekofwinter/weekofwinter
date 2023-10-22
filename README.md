@@ -6,3 +6,12 @@ Got to the root of the project and write ```npm install``` to install all depend
 Then, run ```npm run dev``` and go to ```http://localhost:3000/```
 
 If that does not work then maybe you ran the project on another port than 3000
+
+### Generate sitemap for search engines 
+
+```next build```
+
+Then change the priority inside of the sitemap-0.xml file to the desired value for each page. 
+https://www.weekofwinter.se should have priority 1.0
+
+

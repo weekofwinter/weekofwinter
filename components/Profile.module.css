@@ -2,6 +2,14 @@
     padding-block:36px 36px;
 }
 
+.section:first-child {
+    padding-top: 18px;
+}
+
+.header {
+    margin-bottom: var(--p-block);
+}
+
 .image {
     object-fit: contain;
     border-radius: calc(var(--border-radius) * 2)

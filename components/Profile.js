@@ -15,7 +15,7 @@ export default function Profile({
     <section className={s.section}>
       <DivideContainer reverse={reverse} image>
         <div className={s.content}>
-          <header>
+          <header className={s.header}>
             <h3 className={s.name}>{name}</h3>
             <span className={s.title}>{title}</span>
           </header>

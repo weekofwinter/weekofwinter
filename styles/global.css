@@ -16,6 +16,7 @@ Also every component can use the classes defined in here.
   --code-background: rgba(175,184,193,0.2);
   --max-width:calc(40em + 40ex);
   --padding-inline:calc(1em + 1ex);
+  --p-block:calc(1em + 0.5ex);
 }
 
 * {
@@ -94,7 +95,7 @@ button {
 }
 
 p {
-  margin-block: calc(1em + 0.5ex);
+  margin-block: 0 var(--p-block);
 }
 
 /*Used for mdx, may need to be changed according how the markdown is setup*/

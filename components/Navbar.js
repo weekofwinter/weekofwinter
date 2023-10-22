@@ -34,6 +34,10 @@ const links = [
     href:"/#mer",
     children:[
       {
+        name:"Medlemskap",
+        href:"/mer/medlemskap",
+      },
+      {
         name:"Bilder",
         href:"/mer/bilder",
       },
@@ -313,7 +317,7 @@ export default function Navbar({stickyOffset}) {
  * @example
  * <Logo containerClass={s.logo} onClick={()=>isMenuOpen ? animateMenu("/") : null}/>
  */
-function Logo({width=64.8, height=45, scroll, ...props}) {
+function Logo({scroll, ...props}) {
   return (
     <>
     <div className={s.logoShadow}/>
@@ -326,8 +330,8 @@ function Logo({width=64.8, height=45, scroll, ...props}) {
     >
         <Image
           src={LogoImg}
-          width={width}
-          height={height}
+          width="auto"
+          height={45}
           alt="Week of Winter logga"
           priority
           className={s.logo}

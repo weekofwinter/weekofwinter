@@ -34,8 +34,14 @@ export default function Layout({
 
   //<Emoji className={s.emoji} symbol={meta.emoji} label={meta.title}/>
 
+  const newMeta = {
+    title:`${meta.title} - Week of Winter`,
+    description: meta.description,
+    keywords:meta.keywords,
+  }
+
   return (
-    <RootLayout meta={meta}>
+    <RootLayout meta={newMeta}>
       <Navbar/>
       <main className={s.main}>
         {meta.image ? 

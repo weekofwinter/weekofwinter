@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.weekofwinter.se</loc><lastmod>2023-09-28T17:10:31.624Z</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-<url><loc>https://www.weekofwinter.se/mer/bilder</loc><lastmod>2023-09-28T17:10:31.625Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.weekofwinter.se/mer/historia</loc><lastmod>2023-09-28T17:10:31.625Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.weekofwinter.se/mer/postbeskrivningar</loc><lastmod>2023-09-28T17:10:31.625Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.weekofwinter.se/mer/stadgar</loc><lastmod>2023-09-28T17:10:31.625Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.weekofwinter.se/mer/styrelsen</loc><lastmod>2023-09-28T17:10:31.625Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.weekofwinter.se</loc><lastmod>2023-10-22T17:18:14.497Z</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://www.weekofwinter.se/mer/bilder</loc><lastmod>2023-10-22T17:18:14.498Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.weekofwinter.se/mer/historia</loc><lastmod>2023-10-22T17:18:14.498Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.weekofwinter.se/mer/medlemskap</loc><lastmod>2023-10-22T17:18:14.498Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://www.weekofwinter.se/mer/postbeskrivningar</loc><lastmod>2023-10-22T17:18:14.498Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.weekofwinter.se/mer/stadgar</loc><lastmod>2023-10-22T17:18:14.498Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.weekofwinter.se/mer/styrelsen</loc><lastmod>2023-10-22T17:18:14.498Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

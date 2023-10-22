@@ -30,134 +30,6 @@ import TripDescription from '../components/TripDescription.mdx'
 import RootLayout from '../components/RootLayout';
 import Socialmedia from '../components/Socialmedia';
 
-//debounce to not change the parallax on every pixel
-/*
-function debounce(func, timeout = 10){
-  let timer;
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { func.apply(this, args); }, timeout);
-  };
-}
-*/
-
-//TODO Maybe add react memo
-//This component is used to display the parallax effect 
-const ParallaxEffect = () => {
-
-  const [ref, inView] = useInView()
-
-  const [{ offset }, animation] = useSpring(
-    () => ({ 
-      from: {offset:0},
-      config: {
-        ...config.gentle
-      }
-  }));
-
-  let ticking = false;
-  
-  const handleScroll = () => {
-    if (!ticking && window.scrollY < window.innerHeight) {
-      //Used for optimization 
-      window.requestAnimationFrame(() => {
-        animation.start({offset: window.scrollY});
-        ticking = false;
-      });
-  
-      ticking = true;
-    }
-  };
-
-  useEffect(() => {
-    if(!inView) return
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [inView]);
-
-  const layers = [
-    {
-      "speed": 0.5
-    },
-    {
-      "speed": 0.3
-    },
-    {
-      "speed": 0.2
-    },
-    {
-      "speed": 0.1
-    },
-  ]
-
-  return (
-    <div ref={ref} className={s.parallaxContainer} id="landingPage">
-      {layers.map(({speed}, i) =>  
-        <animated.div
-            key={i}
-            className={s.parallaxMountain}
-            style={{
-              transform: offset.to((o) => `translate3d(0px, ${o * speed}px, 0px)`)
-            }}
-        >
-          <Image 
-            src={`/parallax/layer${i}.svg`}
-            className={s.mountainImage}
-            alt="Mountain landscape"
-            fill
-            priority
-          />
-        </animated.div>
-      )}
-
-      <animated.div 
-        className={s.welcomeContainer}
-        style={{
-          transform: offset.to((o) => `translate3d(0px, ${o * 1.2}px, 0px)`)
-        }}
-      >
-        <h1 className={s.welcomeHeading}>
-          Week of Winter
-        </h1>
-        <TypeAnimation
-          sequence={[
-            "Uppsala universitets skidförening",
-            1000, 
-            "Vi ses i Valdi!", 
-            1000, 
-            "För studenter av studenter.", 
-            1000,
-            "@weekofwinter",
-            1000,
-          ]}
-          speed={60}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-          className={`${s.welcomeSubheading} h3`}
-        />
-      </animated.div>
-
-
-      <div className={s.coverMountain}>
-        <Snow/>
-        <Image 
-          src={`/parallax/layer4.svg`}
-          className={s.mountainImage}
-          alt="Mountain landscape"
-          fill
-          priority
-        />
-      </div>
-    </div>
-  )
-}
-
-
 export default function HomePage() {
 
   const desc = "Week of Winter är en ideell skidförening av studenter för studenter på Uppsala universitet och SLU. Varje år i januari arrangerar vi en maxad skidresa till Alperna, tillsammans med andra roliga skid- och festrelaterade evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning till Uppsalas studentliv. Vi ser fram emot att hänga och skåla med er i Alperna. Vi ses där!";
@@ -348,26 +220,26 @@ export default function HomePage() {
                     <>
                     Studerande vid Uppsala universitet och SLU som även är medlemmar i WOW får delta på resan. 
                     <br></br>
-                    <a style={{color:"#1d4ed8"}} href='https://shorturl.at/sBH13'> Bli medlem här! </a>
+                    <a style={{color:"#1d4ed8"}} href='https://forms.gle/QMk2TJVM8FM5wgsL6'> Bli medlem här! </a>
                     </>
                 },
                 {
-                  q:"Kan man boka egen transaport ner?",
-                  a: "Ja, det går bra att boka egen transport, det alternativet fyller man i vid bokning"
+                  q:"Kan man boka egen transport ner?",
+                  a: "Ja, det går bra att boka egen transport, alternativet fyller man i vid bokningen."
                 },
                 {
                   q:"Går det bra att ta med sina egna skidor ned?",
-                  a:"Ja, det går bra ta med sina egna skidor ned, oavsett om man åker buss eller flyger ned så går det att beställa skidtransport"
+                  a:"Ja, det går bra ta med sina egna skidor ned, oavsett om man åker buss eller flyger ned så går det att beställa skidtransport."
                 },
                 {
                   q:"När går det att boka boende?",
-                  a:"Bokandet av boende öppnar ungefär i mitten av November och mer information kommer ungefär två veckor innan bokningen öppnar"
+                  a:"Bokandet av boende öppnar ungefär i mitten av November och mer information kommer ungefär två veckor innan bokningen öppnar."
                 },
                 {
                   q:"Hur ska jag kontakta Week of Winter?",
                   a: 
                     <>
-                    <div style={{marginBottom:"1rem"}}>Kontakta oss via mail, Facebook eller Instagram. Vi svarar så snabbt som möjligt :)</div>
+                    <div style={{marginBottom:"1rem"}}>Kontakta oss via mail, Facebook eller Instagram. Vi svarar så snabbt som möjligt!</div>
                     <div className={s.questionContact}>
                       <a href='mailto: weekofwinter@gmail.com' className={s.questionEmail}> 
                         weekofwinter@gmail.com
@@ -384,6 +256,10 @@ export default function HomePage() {
             <header className={s.header}>
               <h2>Mer</h2>
             </header>
+            <LinkBox
+              name="Medlemskap"
+              href="/mer/medlemskap"
+            />
             <LinkBox
               name="Bilder"
               href="/mer/bilder"
@@ -428,3 +304,130 @@ export default function HomePage() {
 
 //Override default page layout
 HomePage.getLayout = (page) => page
+
+//debounce to not change the parallax on every pixel
+/*
+function debounce(func, timeout = 10){
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+*/
+
+//TODO Maybe add react memo
+//This component is used to display the parallax effect 
+const ParallaxEffect = () => {
+
+  const [ref, inView] = useInView()
+
+  const [{ offset }, animation] = useSpring(
+    () => ({ 
+      from: {offset:0},
+      config: {
+        ...config.gentle
+      }
+  }));
+
+  let ticking = false;
+  
+  const handleScroll = () => {
+    if (!ticking && window.scrollY < window.innerHeight) {
+      //Used for optimization 
+      window.requestAnimationFrame(() => {
+        animation.start({offset: window.scrollY});
+        ticking = false;
+      });
+  
+      ticking = true;
+    }
+  };
+
+  useEffect(() => {
+    if(!inView) return
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [inView]);
+
+  const layers = [
+    {
+      "speed": 0.5
+    },
+    {
+      "speed": 0.3
+    },
+    {
+      "speed": 0.2
+    },
+    {
+      "speed": 0.1
+    },
+  ]
+
+  return (
+    <div ref={ref} className={s.parallaxContainer} id="landingPage">
+      {layers.map(({speed}, i) =>  
+        <animated.div
+            key={i}
+            className={s.parallaxMountain}
+            style={{
+              transform: offset.to((o) => `translate3d(0px, ${o * speed}px, 0px)`)
+            }}
+        >
+          <Image 
+            src={`/parallax/layer${i}.svg`}
+            className={s.mountainImage}
+            alt="Mountain landscape"
+            fill
+            priority
+          />
+        </animated.div>
+      )}
+
+      <animated.div 
+        className={s.welcomeContainer}
+        style={{
+          transform: offset.to((o) => `translate3d(0px, ${o * 1.2}px, 0px)`)
+        }}
+      >
+        <h1 className={s.welcomeHeading}>
+          Week of Winter
+        </h1>
+        <TypeAnimation
+          sequence={[
+            "Uppsala universitets skidförening",
+            1000, 
+            "Vi ses i Valdi!", 
+            1000, 
+            "För studenter av studenter.", 
+            1000,
+            "@weekofwinter",
+            1000,
+          ]}
+          speed={60}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          className={`${s.welcomeSubheading} h3`}
+        />
+      </animated.div>
+
+
+      <div className={s.coverMountain}>
+        <Snow/>
+        <Image 
+          src={`/parallax/layer4.svg`}
+          className={s.mountainImage}
+          alt="Mountain landscape"
+          fill
+          priority
+        />
+      </div>
+    </div>
+  )
+}

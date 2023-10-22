@@ -119,10 +119,8 @@
 }
 
 .aboutTitle {
-    margin: 0 0 -.6rem 0;
+    margin-block: 0 0.7rem;
 }
-
-
 
 /*Firefox engine är trash jämfört med de andras*/
 @-moz-document url-prefix() {

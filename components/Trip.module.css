@@ -13,6 +13,10 @@
     margin-top: 0.3rem;
 }
 
+.desc {
+    margin-top: var(--p-block);
+}
+
 .icon {
     margin-right: 0.4rem;
 }
