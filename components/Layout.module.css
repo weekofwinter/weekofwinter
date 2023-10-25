@@ -9,7 +9,7 @@
 }
 
 .imgContainer {
-    height: 40vh;
+    height: min(30vh + 10vw, 330px);
 }
 
 .imgContainer, .titleContainer {
