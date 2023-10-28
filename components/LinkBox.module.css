@@ -9,11 +9,19 @@
     justify-content: space-between;
 }
 
-.container:hover {
-    text-decoration: underline;
+.container:hover .name, 
+.container:focus .name, 
+.container:active .name {
+    background-size: 100% 0.1em;
 }
 
 .name {
     text-overflow: ellipsis;
     overflow: hidden;
+    background-image: linear-gradient(var(--background-color), var(--background-color));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
 }

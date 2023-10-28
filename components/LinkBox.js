@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import s from "./LinkBox.module.css"
 import Arrow from "../icons/rightArrow.svg"
 import { useSpring, animated } from '@react-spring/web'
-import { useRouter } from 'next/router'
 import AnimatedContainer from './AnimatedContainer'
 
 export default function LinkBox({name, href}) {

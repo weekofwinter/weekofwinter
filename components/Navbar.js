@@ -206,53 +206,55 @@ export default function Navbar({stickyOffset}) {
       overlay.current.classList.add(s.invisible)
     }
 
+
     return (
       <>
-      {links.map((item)=> (
-        <div
-          key={`nav-link-${item.name}`}
-          onMouseEnter={topLevel && item.children ? onMouseEnter : null} 
-          onMouseLeave={topLevel && item.children ? onMouseLeave : null}
-          className={topLevel ? s.topLevelLinkHover : null} 
-        >
-          <div className={`${topLevel ? s.topLevelLinkContainer : null} ${s.linkContainer}`}>
-            <Link 
-              href={item.href} 
-              aria-label={item.name}
-              className={`${topLevel ? s.topLevelLink : null}  ${s.link}`}
-              style={activeId === item.href.split("#")[1] ? {color:"var(--link-color)"}:null}
-              scroll={!item.href.includes("#")}
-              onClick={()=>{
-                mobileMenu(item.href)
-                if(router.pathname === item.href) {
-                  onMouseLeave()
-                } 
-              }}
-            >
-              {item.name}
-            </Link>
-            {item.children ? 
-            <span onClick={()=>setOpen(!isOpen)} className={s.plus}>
-              <IconName width={30} height={30}/> 
-            </span>
-            : null }
-          </div>
-          {item.children ? 
-          <animated.div 
-            ref={refAnimatedChildren}
-            style={springs} 
-            className={topLevel ? s.topLevelChildren : ""}
+      {links.map((item)=> {
+        const active = (activeId === item.href.split("#")[1])
+        return (
+          <div
+            key={`nav-link-${item.name}`}
+            onMouseEnter={topLevel && item.children ? onMouseEnter : null} 
+            onMouseLeave={topLevel && item.children ? onMouseLeave : null}
           >
-            <div 
-              ref={refChildren} 
-              className={`${s.children} ${topLevel ? s.topLevelChildrenInner : ""}`} 
-            >
-              <Tree links={item.children}/>
+            <div className={`${topLevel ? s.topLevelLinkContainer : ""} ${s.linkContainer}`}>
+              <Link 
+                href={item.href} 
+                aria-label={item.name}
+                className={s.link}
+                style={active ? {color:"var(--link-color)"}:null}
+                scroll={!item.href.includes("#")}
+                onClick={()=>{
+                  mobileMenu(item.href)
+                  if(router.pathname === item.href) {
+                    onMouseLeave()
+                  } 
+                }}
+              >
+                {item.name}
+              </Link>
+              {item.children ? 
+              <span onClick={()=>setOpen(!isOpen)} className={s.plus}>
+                <IconName width={30} height={30}/> 
+              </span>
+              : null }
             </div>
-          </animated.div>
-          : null}
-        </div>
-      ))}
+            {item.children ? 
+            <animated.div 
+              ref={refAnimatedChildren}
+              style={springs} 
+              className={topLevel ? s.topLevelChildren : ""}
+            >
+              <div 
+                ref={refChildren} 
+                className={`${s.children} ${topLevel ? s.topLevelChildrenInner : ""}`} 
+              >
+                <Tree links={item.children}/>
+              </div>
+            </animated.div>
+            : null}
+          </div>
+      )})}
       </>
     )
   })
