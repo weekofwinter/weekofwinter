@@ -3,13 +3,14 @@ import s from "./Profile.module.css"
 import DivideContainer from "./DivideContainer"
 import Image from 'next/image'
 
+//citat - <q className={s.quote}><em>{quote}</em></q>
+
 export default function Profile({
   name,
   title,
-  desc,
-  quote,
   imageSrc, 
-  reverse=false
+  reverse=false,
+  children
 }) {
   return (
     <section className={s.section}>
@@ -19,8 +20,8 @@ export default function Profile({
             <h3 className={s.name}>{name}</h3>
             <span className={s.title}>{title}</span>
           </header>
-          {desc}
-          Citat - <q className={s.quote}><em>{quote}</em></q>
+          {children}
+          
         </div>
         <Image
           src={imageSrc}
