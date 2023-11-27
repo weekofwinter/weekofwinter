@@ -28,8 +28,7 @@ export default function Profile({
           alt={`Bild på ${name} som är ${title} `}
           className={s.image}
           placeholder="blur"
-          sizes="(max-width: 1024px) 100vw,
-                  50vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 500px"
           fill
         />
       </DivideContainer>
