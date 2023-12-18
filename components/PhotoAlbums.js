@@ -1,5 +1,5 @@
 import React from 'react'
-import s from "./ImageAlbums.module.css"
+import s from "./PhotoAlbums.module.css"
 import Image from 'next/image'
 /**
  * A component to show links to google photos album 
@@ -20,7 +20,7 @@ import Image from 'next/image'
  * ]
  * <ImageAlbums albums={albums}/>
  */
-export default function ImageAlbums({albums}) {
+export default function PhotoAlbums({albums}) {
   return (
     <div className={s.container}>
       {albums.map((img, i)=>

@@ -109,7 +109,7 @@ export default function Navbar({stickyOffset}) {
     }
   } 
 
-  function nonScrollable(noScroll) {
+  function nonScrollable(noScroll, changeOverlay=true) {
     //Find how long down the user has scrolled on the page
     const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth
 
@@ -122,14 +122,15 @@ export default function Navbar({stickyOffset}) {
         padding-right:${scrollBarWidth}px;
       ` 
       nav.current.style.cssText=`padding-right:${scrollBarWidth}px;`
-      overlay.current ? overlay.current.classList.remove(s.invisible) : null
+      if(changeOverlay) overlay.current ? overlay.current.classList.remove(s.invisible) : null
     } else {
       document.documentElement.style.cssText = ""
       document.body.style.cssText = ""
       nav.current.style.cssText=""
-      overlay.current ? overlay.current.classList.add(s.invisible) : null
+      if(changeOverlay) overlay.current ? overlay.current.classList.add(s.invisible) : null
     }
   }
+
 
 
   const [styles, animation]= useSpring(
@@ -142,14 +143,17 @@ export default function Navbar({stickyOffset}) {
   const mobileMenu = (path) => {
     //check if desktop menu is used
     if(!window.matchMedia(mobileStyle).matches) return
-    nonScrollable(!isMenuOpen)
-    animation.start({
-      transform: isMenuOpen ? "translate3d(100vw,0,0)" : "translate3d(0vw,0,0)",
-      opacity: isMenuOpen ? 0 : 1,
-      immediate:router.pathname !== path,
-    })
 
-    setMenuOpen(!isMenuOpen)
+    if(router.pathname !== path) {
+      nonScrollable(!isMenuOpen, false)
+    } else {
+      nonScrollable(!isMenuOpen)
+      animation.start({
+        transform: isMenuOpen ? "translate3d(100vw,0,0)" : "translate3d(0vw,0,0)",
+        opacity: isMenuOpen ? 0 : 1,
+      })
+      setMenuOpen(!isMenuOpen)
+    }
   }
 
   //Used to recurively create the navigation links
@@ -205,7 +209,6 @@ export default function Navbar({stickyOffset}) {
 
       overlay.current.classList.add(s.invisible)
     }
-
 
     return (
       <>
