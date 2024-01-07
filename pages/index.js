@@ -287,11 +287,8 @@ export default function HomePage() {
               <h2>Avresa Val-d'Isère</h2>
             </header>
             <Countdown 
-              //new Date(2024, 0, 12, 15, 0, 0) == 2024, Januari, 12:e, kl 15:00 
-              date={new Date(2024, 0, 12, 15, 0, 0)} //OBS - Månad är 0-indexerade 
-              dateExpired={
-                <div style={{textAlign:"center"}}>Taggish</div>
-              }
+              //new Date(2024, 0, 12, 16, 0, 0) == 2024, Januari, 12:e, kl 15:00 
+              date={new Date(2024, 0, 12, 16, 0, 0)} //OBS - Månad är 0-indexerade 
             />
           </section>
           

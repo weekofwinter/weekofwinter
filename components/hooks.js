@@ -46,13 +46,20 @@ const useCountdown = (date) => {
 
   useEffect(() => {
     if(!inView) return
+
     setCountDown(date.getTime() - new Date().getTime() + timezoneOffset)
     const interval = setInterval(() => {
       setCountDown(date.getTime() - new Date().getTime() + timezoneOffset);
     }, 1000);
 
     return () => clearInterval(interval);
+
   }, [inView]);
+
+  //When countdown has ended return just zero so it does not overlap
+  if(date.getTime() - new Date().getTime() + timezoneOffset <= 0) {
+    return [ref, 0, 0, 0, 0]
+  }
 
   return [ref, ...calculateTime(countDown)]
 };
