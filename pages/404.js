@@ -16,7 +16,7 @@ export default function Custom500() {
     <Layout meta={meta}>
       <div className="errorPageContainer">
         <h1>Hoppsan! Sidan kunde inte hittas...</h1>
-        <Lottie url="/lottie/404.json" className="errorPageImg"/>
+        <Lottie src="/lottie/404.lottie" className="errorPageImg"/>
         <Link href="/">
             <h3>Till Week of Winter</h3>
         </Link>

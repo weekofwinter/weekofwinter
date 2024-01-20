@@ -56,17 +56,16 @@ export default function Youtube(
   )
 }
 
-const ImageWithFallback = (props) => {
-    const { src, fallbackSrc, ...rest } = props;
+const ImageWithFallback = ({src, fallbackSrc, ...props}) => {
     const [imgSrc, setImgSrc] = useState(src);
 
     return (
         <Image
-            {...rest}
             src={imgSrc}
             onError={() => {
                 setImgSrc(fallbackSrc);
             }}
+            {...props}
         />
     );
 };

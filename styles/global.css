@@ -148,6 +148,6 @@ code {
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
   .errorPageImg {
-    height: 45vh;
+    height: 50vh;
   }
 }

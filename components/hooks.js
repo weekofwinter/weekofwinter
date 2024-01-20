@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Router from "next/router";
 import { useInView } from "@react-spring/web";
 
@@ -145,7 +145,7 @@ const isBetween = (value, floor, ceil) =>
 const useScrollspy = (ids, offset= 0) => {
   const [activeId, setActiveId] = useState("");
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const listener = () => {
       const scroll = window.scrollY;
 
