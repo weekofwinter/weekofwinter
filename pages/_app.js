@@ -7,7 +7,7 @@ import { Globals, useReducedMotion } from '@react-spring/web';
 import { useEffect } from 'react';
 import { useScrollRestoration } from '../components/hooks';
 import { Analytics } from '@vercel/analytics/react';
-import { Kanit, Lato } from "next/font/google"
+import { Kanit, Lato, Barlow_Condensed } from "next/font/google"
 
 //override mdx components
 const components = {
@@ -33,7 +33,7 @@ const lato = Lato({
   variable:"--font-lato"
 })
 
-const kanit = Kanit({
+const kanit = Barlow_Condensed({
   weight: ["700", "900"],
   style:["normal", "italic"],
   subsets:["latin"],
