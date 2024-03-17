@@ -23,8 +23,8 @@ export default function Footer() {
         <span>
           {`© Week of Winter 2014-${new Date().getFullYear()} Uppsala`}
         </span>
-        <a href='mailto: weekofwinter@gmail.com' className={s.email}> 
-          weekofwinter@gmail.com
+        <a href='mailto: info@weekofwinter.se' className={s.email}> 
+          info@weekofwinter.se
         </a>
         <button 
           aria-label="Åk upp"
