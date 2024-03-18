@@ -25,20 +25,20 @@ const components = {
   Layout,
 }
 
-const lato = Lato({
+const text = Lato({
   weight: ["400", "700"],
   style:["normal", "italic"],
   subsets:["latin"],
   display:"swap",
-  variable:"--font-lato"
+  variable:"--font-text"
 })
 
-const kanit = Barlow_Condensed({
+const heading = Barlow_Condensed({
   weight: ["700", "900"],
   style:["normal", "italic"],
   subsets:["latin"],
   display:"swap",
-  variable:"--font-kanit"
+  variable:"--font-heading"
 })
 
 //The root of the website
@@ -65,12 +65,12 @@ export default function MyApp({ Component, pageProps, router }) {
     <>
       <style jsx global>{`
         :root {
-          --font-kanit: ${kanit.style.fontFamily};
-          --font-lato: ${lato.style.fontFamily};
+          --font-text: ${text.style.fontFamily};
+          --font-heading: ${heading.style.fontFamily};
         }
       `}</style>
       <MDXProvider components={components}>
-        <div className={kanit.variable}>
+        <div className={heading.variable}>
         <Component {...pageProps}/>
         </div>
       </MDXProvider>

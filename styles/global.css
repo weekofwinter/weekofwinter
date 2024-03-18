@@ -38,7 +38,7 @@ body {
                 Oxygen, Ubuntu, Cantarell, 'Open Sans', 
                 'Helvetica Neue', sans-serif;
     */
-    font-family: var(--font-lato);
+    font-family: var(--font-text);
     margin:0;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -47,12 +47,13 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6, th {
-  font-family: var(--font-kanit);
+  font-family: var(--font-heading);
   font-style: italic;
 }
 
 strong {
-  font-family: var(--font-kanit);
+  font-family: var(--font-heading);
+  font-size: 1.05em;
 }
 
 h1,h2,h3,h4,h5,h6,strong,th,.h3,.h5 {

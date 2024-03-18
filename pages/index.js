@@ -241,8 +241,8 @@ export default function HomePage() {
                     <>
                     <div style={{marginBottom:"1rem"}}>Kontakta oss via mail, Facebook eller Instagram. Vi svarar så snabbt som möjligt!</div>
                     <div className={s.questionContact}>
-                      <a href='mailto: weekofwinter@gmail.com' className={s.questionEmail}> 
-                        weekofwinter@gmail.com
+                      <a href='mailto: info@weekofwinter.se' className={s.questionEmail}> 
+                        info@weekofwinter.se
                       </a>
                       <Socialmedia colorInverted/>
                     </div>
