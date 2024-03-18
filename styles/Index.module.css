@@ -45,7 +45,7 @@
 
 .welcomeSubheading {
     color: black;
-    font-family: var(--font-kanit);
+    font-family: var(--font-heading);
 }
 
 .content {
