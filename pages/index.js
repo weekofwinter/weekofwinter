@@ -280,6 +280,10 @@ export default function HomePage() {
               name="Historia"
               href="/mer/historia"
             />
+            <LinkBox
+              name="Filer"
+              href="/mer/filer"
+            />
           </section>
 
           <section className={s.section}>

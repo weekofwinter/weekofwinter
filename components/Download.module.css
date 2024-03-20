@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container + .container {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.filename {
+    font-weight: 700;
+}
+
+.link {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 0.5rem;
+}

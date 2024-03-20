@@ -1,0 +1,28 @@
+import metaImage from "../../public/image/hero/filer.jpg"
+import Download from "../../components/Download.js"
+
+export const meta = {
+  image: metaImage,
+  color:"rgba(156, 163, 175, 0.1)",
+  title:"Filer",
+  description: "Skidföreningen Week of Winters filer såsom policies, mallar, etc.",  
+  keywords:"Uppsala, Student, Filer, Week of Winter,",
+}
+
+#### Policies
+
+
+<br/>
+#### Motioner
+<Download
+  filename={"Exempel-Motion.pdf"}
+/>
+
+<Download
+  filename={"Motion-Mall.pdf"}
+/>
+
+
+export default ({ children }) => (
+  <Layout meta={meta}>{children}</Layout>
+);
