@@ -7,7 +7,7 @@ import AnimatedContainer from "./AnimatedContainer"
 export default function Download({filename}) {
   return (
     <AnimatedContainer className={s.container}>
-      <span className={s.filename}>{filename}</span>
+      <span>{filename}</span>
       <a 
         className={s.link}
         href={`/filer/${filename}`}

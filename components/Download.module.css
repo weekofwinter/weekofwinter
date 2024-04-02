@@ -10,10 +10,6 @@
     border-top: 1px solid var(--text-color);
 }
 
-.filename {
-    font-weight: 700;
-}
-
 .link {
     color: white;
     display: flex;
