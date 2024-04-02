@@ -2,10 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 import Icon from "../icons/download.svg"
 import s from "./Download.module.css"
+import AnimatedContainer from "./AnimatedContainer"
 
 export default function Download({filename}) {
   return (
-    <div className={s.container}>
+    <AnimatedContainer className={s.container}>
       <span className={s.filename}>{filename}</span>
       <a 
         className={s.link}
@@ -18,6 +19,6 @@ export default function Download({filename}) {
         Ladda ner
         <Icon className={s.icon} height={30} width={30}/>
       </a>
-    </div>
+    </AnimatedContainer>
   )
 }
