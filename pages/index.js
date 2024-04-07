@@ -281,8 +281,8 @@ export default function HomePage() {
               href="/mer/historia"
             />
             <LinkBox
-              name="Filer"
-              href="/mer/filer"
+              name="Dokument"
+              href="/mer/dokument"
             />
           </section>
 
