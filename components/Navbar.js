@@ -58,8 +58,8 @@ const links = [
         href:"/mer/historia",
       },
       {
-        name:"Filer",
-        href:"/mer/filer",
+        name:"Dokument",
+        href:"/mer/dokument",
       },
     ]
   },
