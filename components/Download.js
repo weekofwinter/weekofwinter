@@ -10,7 +10,7 @@ export default function Download({filename}) {
       <span>{filename}</span>
       <a 
         className={s.link}
-        href={`/filer/${filename}`}
+        href={`/dokument/${filename}`}
         alt={`Download ${filename}`}
         target="_blank"
         rel="noopener noreferrer"
