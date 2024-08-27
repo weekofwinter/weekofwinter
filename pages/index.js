@@ -29,6 +29,7 @@ import AnimatedContainer from '../components/AnimatedContainer';
 import TripDescription from '../components/TripDescription.mdx'
 import RootLayout from '../components/RootLayout';
 import Socialmedia from '../components/Socialmedia';
+import LesArcs from "../public/image/lesarcs.jpg"
 
 export default function HomePage() {
 
@@ -82,11 +83,11 @@ export default function HomePage() {
 
           <section id="arets-resa" className={s.section}>
             <Trip
-              title="Val-d'Isère 2024"
-              date="12 Jan – 21 Jan"
-              ticket="Anmälan öppnar 2023-09-29 kl 12:30"
+              title="Les Arcs 2025"
+              date="17 Jan - 26 Jan"
+              ticket="Anmälan öppnar i höst"
               place="Les Arcs, Frankrike"
-              placeLink="https://goo.gl/maps/ra6y4Cr82uSyJ2bM7"
+              placeLink="https://maps.app.goo.gl/zHYdwsnS9Hxdzm7T6"
               description={
                 <>
                 <TripDescription/>
@@ -122,12 +123,11 @@ export default function HomePage() {
             <div className={s.priceCardContainer}>
               <PriceCard
                 title="Flyg"
-                price="10 995:-"
+                price="XX"
                 href="https://group.skivenue.com/wow/signup"
                 includes={[
                   "Flyg tur och retur från Arlanda, inkl. transfer ", 
                   "Boende (enkel lägenhet med eget kök)", 
-                  "Liftkort 6 dagar (Val D'isere + Tignes)",
                   "Guideservice 24/7", 
                   "Turistskatter", 
                 ]}
@@ -135,13 +135,12 @@ export default function HomePage() {
 
               <PriceCard
                 title="Buss"
-                price="7 999:-"
+                price="XX"
                 href="https://group.skivenue.com/wow/signup"
                 popular
                 includes={[
                   "Bussresa tur och retur från Uppsala", 
                   "Boende (enkel lägenhet med eget kök)", 
-                  "Liftkort 6 dagar (Val D'isere + Tignes)",
                   "Guideservice 24/7", 
                   "Turistskatter", 
                 ]}
@@ -149,11 +148,10 @@ export default function HomePage() {
 
               <PriceCard
                 title="Basic"
-                price="6 499:-"
+                price="XX"
                 href="https://group.skivenue.com/wow/signup"
                 includes={[
                   "Boende (enkel lägenhet med eget kök)", 
-                  "Liftkort 6 dagar (Val D'isere + Tignes)",
                   "Guideservice 24/7", 
                   "Turistskatter", 
                 ]}
@@ -288,11 +286,11 @@ export default function HomePage() {
 
           <section className={s.section}>
             <header className={s.header}>
-              <h2>Avresa Val-d'Isère</h2>
+              <h2>Avresa Les Arcs</h2>
             </header>
             <Countdown 
               //new Date(2024, 0, 12, 16, 0, 0) == 2024, Januari, 12:e, kl 15:00 
-              date={new Date(2024, 0, 12, 16, 0, 0)} //OBS - Månad är 0-indexerade 
+              date={new Date(2025, 0, 17, 16, 0, 0)} //OBS - Månad är 0-indexerade 
             />
           </section>
           
@@ -403,7 +401,7 @@ const ParallaxEffect = () => {
           sequence={[
             "Uppsala universitets skidförening",
             1000, 
-            "Vi ses i Valdi!", 
+            "Vi ses i Les Arcs!", 
             1000, 
             "För studenter av studenter.", 
             1000,
