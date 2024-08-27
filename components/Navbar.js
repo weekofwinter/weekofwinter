@@ -326,11 +326,12 @@ export default function Navbar({stickyOffset}) {
  * @component
  * @example
  * <Logo containerClass={s.logo} onClick={()=>isMenuOpen ? animateMenu("/") : null}/>
+ * 
  */
+//<div className={s.logoShadow}/>
 function Logo({scroll, ...props}) {
   return (
     <>
-    <div className={s.logoShadow}/>
     <Link 
       aria-label='returnToHomePage'
       className={s.logoContainer} 
