@@ -85,7 +85,7 @@ export default function HomePage() {
               title="Val-d'Isère 2024"
               date="12 Jan – 21 Jan"
               ticket="Anmälan öppnar 2023-09-29 kl 12:30"
-              place="Val-d'Isère, Frankrike"
+              place="Les Arcs, Frankrike"
               placeLink="https://goo.gl/maps/ra6y4Cr82uSyJ2bM7"
               description={
                 <>
