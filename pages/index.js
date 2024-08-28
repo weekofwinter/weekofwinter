@@ -87,7 +87,7 @@ export default function HomePage() {
               date="17 Jan - 26 Jan"
               ticket="Anmälan öppnar i höst"
               place="Les Arcs, Frankrike"
-              placeLink="https://maps.app.goo.gl/zHYdwsnS9Hxdzm7T6"
+              placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
               description={
                 <>
                 <TripDescription/>
