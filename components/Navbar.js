@@ -61,6 +61,10 @@ const links = [
         name:"Dokument",
         href:"/mer/dokument",
       },
+      {
+        name:"Eventschema",
+        href:"/mer/eventschema",
+      },
     ]
   },
 ]

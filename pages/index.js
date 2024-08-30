@@ -343,6 +343,7 @@ export default function HomePage() {
               <LinkBox name="Stadgar" href="/mer/stadgar" />
               <LinkBox name="Historia" href="/mer/historia" />
               <LinkBox name="Dokument" href="/mer/dokument" />
+              <LinkBox name="Event" href="/mer/event" />
             </section>
 
             <section className={s.section}>

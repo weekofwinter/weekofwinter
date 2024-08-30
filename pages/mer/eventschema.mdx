@@ -1,0 +1,15 @@
+import metaImage from "../../public/image/hero/bilder.jpg";
+import PhotoAlbums from "../../components/PhotoAlbums.js";
+
+export const meta = {
+  image: metaImage,
+  emoji: "📷",
+  color: "rgba(255, 255, 255, 0.1)",
+  title: "Eventschema",
+  description: "",
+  keywords: "Event, Skidor, Fest, Afterski, Student, Uppsala",
+};
+
+Här kommer vi publicera schemat för höstens event samt eventen på plats i Les Arcs. 
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>;
