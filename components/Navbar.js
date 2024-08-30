@@ -38,6 +38,10 @@ const links = [
         href:"/mer/medlemskap",
       },
       {
+        name:"Eventschema",
+        href:"/mer/eventschema",
+      },
+      {
         name:"Bilder",
         href:"/mer/bilder",
       },
@@ -61,10 +65,7 @@ const links = [
         name:"Dokument",
         href:"/mer/dokument",
       },
-      {
-        name:"Eventschema",
-        href:"/mer/eventschema",
-      },
+
     ]
   },
 ]
