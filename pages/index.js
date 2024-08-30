@@ -255,6 +255,78 @@ export default function HomePage() {
                         </div>
                       </>
                     ),
+                  }, 
+                  {
+                    q: "När ska man kontakta Week of winter och när ska man kontakta Skivenue?",
+                    a: "Week of Winter är den primära kontaktpersonen innan man bokar resan. SkiVenue kan ni alltid kontakta, och ni ska alltid kontakta dem vid alla frågor som rör sig om själva resan, boende, transport, liftkort, betalning, bokning osv. ",
+                  },
+                  {
+                    q: "Vad gör SkiVenue och vad gör Week of Winter?",
+                    a: "Skivenue är vår resebyrå och är därför de som ordnar all transport, boende och står för de aktiviteter som eventbandet ingår i. Styrelsen på Week of Winter kommer också hålla en del aktiviteter och det kommer tydligt framgå när det är vi som håller ett event. Week of Winter är de primära kontaktpersonerna innan bokningen av resan och förmedlar även generell information om resan via våra kanaler.",
+                  },
+                  {
+                    q: "Vad gäller kring deposition för boende?",
+                    a: "Alla rum betalar deposition för boendet som en säkerhet för uthyraren. Det betalas i samband med incheckning direkt till uthyraren. Beloppet dras inte, men reserveras på kortet och reservationen släpps vid hemresa om allt är fint med lägenheten och inget har gått sönder under resan",
+                  },
+                  {
+                    q: "Om man åker buss, är det raster under vägen?",
+                    a: "Ja, det är raster under vägen. Oftast har chauffören en ungefärlig plan på vart rasterna sker, men dessa kan ändras beroende på trafik och de pauser chauffören måste ta.",
+                  },
+                  {
+                    q: "Får man ta med sig mat på bussen?",
+                    a: "Ja! Man får ta med sig mat på bussen. Det kan vara en bra idé att ta med sig mat som kan ätas kall och annat snacks, då det kan vara lång tid mellan raster samt varierande utbud av mat på rastplatser.",
+                  },
+                  {
+                    q: "Vart finns information om min bussresa?",
+                    a: (
+                      <>
+                        På hemsidan där resan bokas. Vid frågor,
+                        <br></br>
+                        <a
+                          style={{ color: "#1d4ed8" }}
+                          href="https://www.skivenue.se/kontakt"
+                        >
+                          {" "}
+                          Kontakta Skivenue.{" "}
+                        </a>
+                      </>
+                    ),
+                  },
+                  {
+                    q: "Vart finns information om min flygresa?",
+                    a: (
+                      <>
+                        På hemsidan där resan bokas. Vid frågor,
+                        <br></br>
+                        <a
+                          style={{ color: "#1d4ed8" }}
+                          href="https://www.skivenue.se/kontakt"
+                        >
+                          {" "}
+                          Kontakta Skivenue.{" "}
+                        </a>
+                      </>
+                    ),
+                  },
+                  {
+                    q: "Hur vet man om det sker något event?",
+                    a: "Vi i styrelsen kommer påminna er om både våra egna event och SkiVenues. Se höstens schema här och skidveckans schema här. Glöm inte att ha notiser på ORBI och följa oss på instagram för att få den senaste uppdateringarna och eventuella ändringar i schemat!",
+                  },
+                  {
+                    q: "Hur anmäler jag mig till Week of winters event?",
+                    a: (
+                      <>
+                        Anmälan till våra event sker via ORBI. Det är även där man är registrerad som medlem.  
+                        <br></br>
+                        <a
+                          style={{ color: "#1d4ed8" }}
+                          href="https://link.orbiapp.io/yy2T"
+                        >
+                          {" "}
+                          Week of Winter på ORBI{" "}
+                        </a>
+                      </>
+                    ),
                   },
                 ]}
               />
