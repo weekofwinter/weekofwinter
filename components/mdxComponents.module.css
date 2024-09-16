@@ -1,8 +1,7 @@
 .imgContainer {
     display: flex;
     position: relative;
-    width: 100%;
-    aspect-ratio: 3/2; /*Prisa Gud här kommer skatteåterbäringen*/
+    aspect-ratio: 3/2.2; /*Prisa Gud här kommer skatteåterbäringen*/
 }
 
 .img {

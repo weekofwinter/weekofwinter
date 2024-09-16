@@ -337,13 +337,13 @@ export default function HomePage() {
                 <h2>Mer</h2>
               </header>
               <LinkBox name="Medlemskap" href="/mer/medlemskap" />
+              <LinkBox name="Eventschema" href="/mer/eventschema" />
               <LinkBox name="Bilder" href="/mer/bilder" />
               <LinkBox name="Styrelsen" href="/mer/styrelsen" />
               <LinkBox name="Postbeskrivningar" href="/mer/postbeskrivningar" />
               <LinkBox name="Stadgar" href="/mer/stadgar" />
               <LinkBox name="Historia" href="/mer/historia" />
               <LinkBox name="Dokument" href="/mer/dokument" />
-              <LinkBox name="Event" href="/mer/event" />
             </section>
 
             <section className={s.section}>
