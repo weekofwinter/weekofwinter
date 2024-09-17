@@ -46,7 +46,7 @@ export default function Layout({
       <main className={s.main}>
         {meta.image ? 
         <>
-        <animated.div style={imgStyle} className={s.imgContainer}>
+        <animated.div style={meta.color ? imgStyle : null} className={s.imgContainer}>
           <Image
             alt={meta.title}
             className={s.img}

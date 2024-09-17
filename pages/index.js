@@ -116,7 +116,7 @@ export default function HomePage() {
                 <PriceCard
                   title="Flyg"
                   price="11 159kr"
-                  href="https://group.skivenue.com/wow/signup"
+                  href="https://group.skivenue.com/WOW"
                   includes={[
                     "Flyg tur och retur från Arlanda, inkl. transfer ",
                     "Boende (enkel lägenhet med eget kök)",
@@ -129,7 +129,7 @@ export default function HomePage() {
                 <PriceCard
                   title="Buss"
                   price="8 659kr"
-                  href="https://group.skivenue.com/wow/signup"
+                  href="https://group.skivenue.com/WOW"
                   popular
                   includes={[
                     "Bussresa tur och retur från Uppsala",
@@ -143,7 +143,7 @@ export default function HomePage() {
                 <PriceCard
                   title="Basic"
                   price="7 159"
-                  href="https://group.skivenue.com/wow/signup"
+                  href="https://group.skivenue.com/WOW"
                   includes={[
                     "Boende (enkel lägenhet med eget kök)",
                     "Guideservice 24/7",
