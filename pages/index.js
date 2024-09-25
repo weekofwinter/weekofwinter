@@ -64,8 +64,23 @@ export default function HomePage() {
         <ParallaxEffect />
         <article className={s.content}>
           <div className={s.innerContent}>
+          <header className={s.header}>
+                <h2>
+                <br></br>
+                        <a
+                          style={{ color: "#FFFFFF" }}
+                          href="https://group.skivenue.com/WOW"
+                        >
+                          {" "}
+                          Länk till årets anmälan{" "}
+                        </a>
+                        </h2>
+              </header>
             <section id="om" className={s.section}>
+            
+              
               <DivideContainer>
+                
                 <>
                   <AnimatedContainer>
                     <header>
