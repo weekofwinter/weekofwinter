@@ -37,7 +37,7 @@ export default function HomePage() {
 
   //VIKTIGT att uppdatera om något ändras så att det blir rätt på Google/Bing
   const meta = {
-    title: "Week of Winter - Uppsalas skidförening för studenter",
+    title: "Week of Winter - En skidförening för Uppsalas studenter",
     description: desc,
     keywords:
       "week of winter, weekofwinter, Uppsala universitet skidförening, Skidförening Uppsala",
@@ -255,7 +255,7 @@ export default function HomePage() {
                         </div>
                       </>
                     ),
-                  }, 
+                  },
                   {
                     q: "När ska man kontakta Week of winter och när ska man kontakta Skivenue?",
                     a: "Week of Winter är den primära kontaktpersonen innan man bokar resan. SkiVenue kan ni alltid kontakta, och ni ska alltid kontakta dem vid alla frågor som rör sig om själva resan, boende, transport, liftkort, betalning, bokning osv. ",
@@ -316,7 +316,8 @@ export default function HomePage() {
                     q: "Hur anmäler jag mig till Week of winters event?",
                     a: (
                       <>
-                        Anmälan till våra event sker via ORBI. Det är även där man är registrerad som medlem.  
+                        Anmälan till våra event sker via ORBI. Det är även där
+                        man är registrerad som medlem.
                         <br></br>
                         <a
                           style={{ color: "#1d4ed8" }}
@@ -458,7 +459,7 @@ const ParallaxEffect = () => {
         <h1 className={s.welcomeHeading}>Week of Winter</h1>
         <TypeAnimation
           sequence={[
-            "Uppsala universitets skidförening",
+            "En skidförening för Uppsalas studenter",
             1000,
             "Vi ses i Les Arcs!",
             1000,
