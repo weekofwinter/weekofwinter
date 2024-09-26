@@ -6,7 +6,7 @@ import Socialmedia from "./Socialmedia";
 import Sponsors from "./Sponsors";
 import ArrowUp from "../icons/arrow-up.svg";
 import InfoBox from "./InfoBox";
-
+  
 /**
  * The website footer that will be shown on all pages at the bottom
  * @component

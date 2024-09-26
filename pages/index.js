@@ -58,7 +58,7 @@ export default function HomePage() {
   };
 
   return (
-    <RootLayout meta={meta}>
+    <RootLayout meta={meta}>  
       <main>
         <Navbar stickyOffset />
         <ParallaxEffect />
