@@ -58,29 +58,26 @@ export default function HomePage() {
   };
 
   return (
-    <RootLayout meta={meta}>  
+    <RootLayout meta={meta}>
       <main>
         <Navbar stickyOffset />
         <ParallaxEffect />
         <article className={s.content}>
           <div className={s.innerContent}>
-          <header className={s.header}>
-                <h2>
+            <header className={s.header}>
+              <h2>
                 <br></br>
-                        <a
-                          style={{ color: "#FFFFFF" }}
-                          href="https://group.skivenue.com/WOW"
-                        >
-                          {" "}
-                          Länk till årets anmälan{" "}
-                        </a>
-                        </h2>
-              </header>
+                <a
+                  style={{ color: "#FFFFFF" }}
+                  href="https://group.skivenue.com/WOW"
+                >
+                  {" "}
+                  Länk till årets anmälan{" "}
+                </a>
+              </h2>
+            </header>
             <section id="om" className={s.section}>
-            
-              
               <DivideContainer>
-                
                 <>
                   <AnimatedContainer>
                     <header>
@@ -231,10 +228,10 @@ export default function HomePage() {
                         <br></br>
                         <a
                           style={{ color: "#1d4ed8" }}
-                          href="https://forms.gle/QMk2TJVM8FM5wgsL6"
+                          href="https://link.orbiapp.io/jnfj"
                         >
                           {" "}
-                          Bli medlem här!{" "}
+                          Bli medlem via orbi här!{" "}
                         </a>
                       </>
                     ),
