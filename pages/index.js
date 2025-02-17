@@ -64,18 +64,6 @@ export default function HomePage() {
         <ParallaxEffect />
         <article className={s.content}>
           <div className={s.innerContent}>
-            <header className={s.header}>
-              <h2>
-                <br></br>
-                <a
-                  style={{ color: "#FFFFFF" }}
-                  href="https://group.skivenue.com/WOW"
-                >
-                  {" "}
-                  Länk till årets anmälan{" "}
-                </a>
-              </h2>
-            </header>
             <section id="om" className={s.section}>
               <DivideContainer>
                 <>
@@ -97,11 +85,11 @@ export default function HomePage() {
 
             <section id="arets-resa" className={s.section}>
               <Trip
-                title="Les Arcs 2025"
-                date="17 Jan - 26 Jan"
-                ticket="Anmälan öppnar 25 September"
-                place="Les Arcs, Frankrike"
-                placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
+                title="Nästa resa: Januari 2026!"
+                date="TBA"
+                ticket="TBA"
+                place="TBA"
+                //placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
                 description={
                   <>
                     <TripDescription />
@@ -112,7 +100,7 @@ export default function HomePage() {
               />
 
               <div className={s.infoBoxContainer}>
-                <InfoBox value={15} valueAfter="+" desc="Barer och klubbar" />
+                <InfoBox value={5} valueAfter="+" desc="Barer och klubbar" />
 
                 <InfoBox value={420} desc="Kilometer pist" />
 
@@ -127,7 +115,7 @@ export default function HomePage() {
               <div className={s.priceCardContainer}>
                 <PriceCard
                   title="Flyg"
-                  price="11 159kr"
+                  price="TBA"
                   href="https://group.skivenue.com/WOW"
                   includes={[
                     "Flyg tur och retur från Arlanda, inkl. transfer ",
@@ -140,7 +128,7 @@ export default function HomePage() {
 
                 <PriceCard
                   title="Buss"
-                  price="8 659kr"
+                  price="TBA"
                   href="https://group.skivenue.com/WOW"
                   popular
                   includes={[
@@ -154,7 +142,7 @@ export default function HomePage() {
 
                 <PriceCard
                   title="Basic"
-                  price="7 159"
+                  price="TBA"
                   href="https://group.skivenue.com/WOW"
                   includes={[
                     "Boende (enkel lägenhet med eget kök)",
