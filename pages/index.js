@@ -85,7 +85,7 @@ export default function HomePage() {
 
             <section id="arets-resa" className={s.section}>
               <Trip
-                title="Nästa resa: Januari 2026!"
+                title="Håll ut, nästa resa: Januari 2026!"
                 date="TBA"
                 ticket="TBA"
                 place="TBA"
