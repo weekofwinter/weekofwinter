@@ -128,7 +128,7 @@ export default function HomePage() {
 
                 <PriceCard
                   title="Buss"
-                  price="TBA"
+                  price="9 299 kr"
                   href="https://group.skivenue.com/WOW"
                   popular
                   includes={[
@@ -310,8 +310,20 @@ export default function HomePage() {
                   },
                   {
                     q: "Hur vet man om det sker något event?",
-                    a: "Vi i styrelsen kommer påminna er om både våra egna event och SkiVenues. Se höstens schema här och skidveckans schema här. Glöm inte att ha notiser på ORBI och följa oss på instagram för att få den senaste uppdateringarna och eventuella ändringar i schemat!",
-                  },
+ a: (
+                      <>
+                        Anmälan till våra event sker via ORBI. Det är även där
+                        man är registrerad som medlem.
+                        <br></br>
+                        <a
+                          style={{ color: "#1d4ed8" }}
+                          href="https://www.weekofwinter.se/mer/eventschema"
+                        >
+                          {" "}
+                          Week of Winter på ORBI{" "}
+                        </a>
+                      </>
+                    )                  },
                   {
                     q: "Hur anmäler jag mig till Week of winters event?",
                     a: (
