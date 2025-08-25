@@ -85,10 +85,10 @@ export default function HomePage() {
 
             <section id="arets-resa" className={s.section}>
               <Trip
-                title="Håll ut, nästa resa: Januari 2026!"
-                date="TBA"
-                ticket="TBA"
-                place="TBA"
+                title="Häng med oss till Val Thorens!"
+                date="Vecka 4"
+                ticket="Bokningen öppnar 25/8 kl. 12.30."
+                place="Val Thorens"
                 //placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
                 description={
                   <>
