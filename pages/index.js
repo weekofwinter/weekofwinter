@@ -85,10 +85,10 @@ export default function HomePage() {
 
             <section id="arets-resa" className={s.section}>
               <Trip
-                title="Häng med oss till.."
+                title="Häng med på resan 2026!"
                 date="Vecka 4"
                 ticket="Bokningen öppnar 25/8 kl. 12.30."
-                place="TBA"
+                place="Val Thorens"
                 //placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
                 description={
                   <>
@@ -100,11 +100,11 @@ export default function HomePage() {
               />
 
               <div className={s.infoBoxContainer}>
-                <InfoBox value={5} valueAfter="+" desc="Barer och klubbar" />
+                <InfoBox value={50} valueAfter="+" desc="Barer och klubbar" />
 
-                <InfoBox value={420} desc="Kilometer pist" />
+                <InfoBox value={600} desc="Kilometer pist" />
 
-                <InfoBox value={3226} desc="Meter över havet" />
+                <InfoBox value={3230} desc="Meter över havet" />
               </div>
             </section>
 
@@ -115,7 +115,7 @@ export default function HomePage() {
               <div className={s.priceCardContainer}>
                 <PriceCard
                   title="Flyg"
-                  price="TBA"
+                  price="11 799 kr"
                   href="https://group.skivenue.com/WOW"
                   includes={[
                     "Flyg tur och retur från Arlanda, inkl. transfer ",
@@ -142,7 +142,7 @@ export default function HomePage() {
 
                 <PriceCard
                   title="Basic"
-                  price="TBA"
+                  price="7 799 kr"
                   href="https://group.skivenue.com/WOW"
                   includes={[
                     "Boende (enkel lägenhet med eget kök)",
@@ -157,9 +157,8 @@ export default function HomePage() {
                 <div className={s.addOnCards}>
                   <InfoCard
                     title="Eventpaket. "
-                    desc="Gillar du att gå på evenemang? Då är detta något för dig! 
-                        I eventpaketet ingår en välkomstfest, picnic, flera andra events och 
-                        rabatt på flera ställen, bland annat La Folie Douce. "
+                    desc="Välkomstfest, picknick på pisten, Kiss and Goodbye-party och rabatter på barer och klubbar. 
+                    Låter det som din grej? Då ska du självklart haka på eventpaketet!"
                     icon={<Ticket width={70} height={70} />}
                   />
                   <InfoCard
@@ -176,9 +175,9 @@ export default function HomePage() {
                     icon={<DeliveryTruck width={70} height={70} />}
                   />
                   <InfoCard
-                    title="Extra dag på lifkortet. "
-                    desc="Vill du maximera skidåkandet så mycket det går? Då går det att 
-                        utöka skidkortet med en extra dag!"
+                    title="Utökat liftkort."
+                    desc="Vill du få ut maximalt av din skidåkning? Då kan du uppgradera ditt liftkort och 
+                    få tillgång till hela Trois Vallees med 600 km pist!"
                     icon={<PlusAdd width={70} height={70} />}
                   />
                   <InfoCard
@@ -190,7 +189,7 @@ export default function HomePage() {
                   <InfoCard
                     title="Avbeställningsskydd. "
                     desc="Nojig över att en sjukdom eller olycka stoppar din resa? Frukta ej. 
-                        Det går att lägga till avbeställningskydd till bokningen."
+                        Det går att lägga till avbeställningskydd till bokningen. Gäller även vid omtenta."
                     icon={<CalenderCancel width={70} height={70} />}
                   />
                 </div>
@@ -216,7 +215,7 @@ export default function HomePage() {
                         <br></br>
                         <a
                           style={{ color: "#1d4ed8" }}
-                          href="https://link.orbiapp.io/jnfj"
+                          href="https://go.orbiapp.io/WRn8aD8J5Vb"
                         >
                           {" "}
                           Bli medlem via orbi här!{" "}
@@ -312,15 +311,18 @@ export default function HomePage() {
                     q: "Hur vet man om det sker något event?",
  a: (
                       <>
-                        Anmälan till våra event sker via ORBI. Det är även där
-                        man är registrerad som medlem.
+                        Vi i styrelsen kommer påminna er om både våra egna event och SkiVenues. Klicka på länken för att se eventschemat. Glöm inte att följa oss på ORBI och Instagram för att få de senaste uppdateringarna och 
+                        eventuella ändringar i schemat!
+
+Nytt för resan 2026 är att vi kommer ha en Whatsapp-grupp där vi skickar ut information under själva resan.
+
                         <br></br>
                         <a
                           style={{ color: "#1d4ed8" }}
                           href="https://www.weekofwinter.se/mer/eventschema"
                         >
                           {" "}
-                          Week of Winter på ORBI{" "}
+                          Eventschema{" "}
                         </a>
                       </>
                     )                  },
