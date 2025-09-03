@@ -8,7 +8,7 @@ Also every component can use the classes defined in here.
   --background-color: #081b31;
   --text-color:#FFFFFF;
   --link-color: #85CEFF;
-  --border-radius: 3px;
+  --border-radius: 5px;
   --sky-color: linear-gradient(to bottom, #00a6ce 0%, #f0f9ff 100%);
   --footer-background-color: linear-gradient(to bottom, var(--background-color) 0%, #0a1118 100%);
   --menu-background-color:rgba(8, 27, 49, 0.8);
