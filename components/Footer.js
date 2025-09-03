@@ -18,14 +18,13 @@ export default function Footer() {
     <div className={s.container}>
       <Sponsors />
       <footer className={s.footer}>
-      <span className={s.href}>
+        <p>
           *Week of Winter är en oberoende förening utan koppling till Uppsala
           universitet
-        </span>
-        <span className={s.href}>
-        *Varje individ ansvarar själv för eventuell utebliven studietid till följd av resan
-          
-        </span>
+        </p>
+        <p>
+          *Varje individ ansvarar själv för eventuell utebliven studietid till följd av resan
+        </p>
         <span className={s.title}>Se till att följa oss på</span>
         <Socialmedia animation />
         <span>

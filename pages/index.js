@@ -89,7 +89,7 @@ export default function HomePage() {
                 date="Vecka 4"
                 ticket="Bokningen öppnar 25/8 kl. 12.30."
                 place="Val Thorens"
-                //placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
+                placeLink="https://maps.app.goo.gl/rAgnu1TDT8AmnQdM6"
                 description={
                   <>
                     <TripDescription />
@@ -363,11 +363,11 @@ Nytt för resan 2026 är att vi kommer ha en Whatsapp-grupp där vi skickar ut i
 
             <section className={s.section}>
               <header className={s.header}>
-                <h2>Avresa Les Arcs</h2>
+                <h2>Avresa Val Thorens</h2>
               </header>
               <Countdown
                 //new Date(2024, 0, 12, 16, 0, 0) == 2024, Januari, 12:e, kl 15:00
-                date={new Date(2025, 0, 17, 16, 0, 0)} //OBS - Månad är 0-indexerade
+                date={new Date(2026, 0, 16, 16, 0, 0)} //OBS - Månad är 0-indexerade
               />
             </section>
           </div>
@@ -475,7 +475,7 @@ const ParallaxEffect = () => {
           sequence={[
             "En skidförening för Uppsalas studenter",
             1000,
-            "Vi ses i Les Arcs!",
+            "Vi ses i Val Thorens!",
             1000,
             "För studenter av studenter.",
             1000,

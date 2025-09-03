@@ -33,11 +33,23 @@ const nextConfig = {
         defaultLocale:"sv",
     },
     images: {
-        domains: [
-            'www.freepnglogos.com',
-            'div2procdn.shopdutyfree.com', 
-            'lh3.googleusercontent.com',//Google photos
-            'i.ytimg.com'//Youtube
+        remotePatterns: [
+            {
+              protocol: 'https',
+              hostname: 'www.freepnglogos.com',
+            },
+            {
+              protocol: 'https',
+              hostname: 'div2procdn.shopdutyfree.com',
+            },
+            {
+              protocol: 'https',
+              hostname: 'lh3.googleusercontent.com',
+            },
+            {
+              protocol: 'https',
+              hostname: 'i.ytimg.com',
+            },
         ],
     },
     webpack(config) {
