@@ -503,3 +503,4 @@ const ParallaxEffect = () => {
     </div>
   );
 };
+
