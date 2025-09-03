@@ -15,3 +15,4 @@ Then change the priority inside of the sitemap-0.xml file to the desired value f
 https://www.weekofwinter.se should have priority 1.0
 
 
+
