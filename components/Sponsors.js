@@ -1,15 +1,15 @@
 import React from 'react';
 import s from "./Sponsors.module.css"
-import stolt from "../public/image/sponsor/stoltOfSweden.jpg"
+import kang from "../public/image/sponsor/kangpoles.jpg"
 import skivenue from "../public/image/sponsor/skivenue.png"
 import abro from "../public/image/sponsor/abro.jpg"
 import Image from 'next/image';
 
 const images = [
   { 
-    alt: "Stolt of ski" , 
-    href: "https://www.stoltski.com/",
-    src: stolt,
+    alt: "Kang Poles" , 
+    href: "https://kangpoles.com/",
+    src: kang,
   },
   { 
     alt: "Skivenue", 

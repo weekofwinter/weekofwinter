@@ -78,7 +78,7 @@ export default function HomePage() {
                 </>
                 <Youtube
                   title="Week of Winter - Aftermovie"
-                  videoId="pM8BvWNd0R4"
+                  videoId="CIMq1W1dGSg"
                 />
               </DivideContainer>
             </section>
@@ -87,7 +87,7 @@ export default function HomePage() {
               <Trip
                 title="Häng med på resan 2026!"
                 date="Vecka 4"
-                ticket="Bokningen öppnar 25/8 kl. 12.30."
+                ticket="Bokningen öppnar 25/9 kl. 12.30."
                 place="Val Thorens"
                 //placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
                 description={
