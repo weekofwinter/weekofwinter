@@ -98,7 +98,7 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar 25/8 kl. 12.30",
     },
   ],
 
