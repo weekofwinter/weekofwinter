@@ -42,7 +42,7 @@ const data = {
   trip: {
     title: "Häng med på resan 2026!",
     date: "Vecka 4",
-    bookingOpens: "25/8 kl. 12.30",
+    bookingOpens: "25/9 kl. 12.30",
     destination: {
       name: "Val Thorens",
       link: "https://maps.app.goo.gl/rAgnu1TDT8AmnQdM6",
@@ -72,7 +72,7 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/8 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
     },
     {
       title: "Buss",
@@ -86,7 +86,7 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/8 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
     },
     {
       title: "Basic",
@@ -98,7 +98,7 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/8 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
     },
   ],
 
