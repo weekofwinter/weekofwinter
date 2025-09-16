@@ -98,7 +98,7 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/8 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
     },
   ],
 
@@ -299,7 +299,7 @@ export default function HomePage() {
                 </>
                 <Youtube
                   title="Week of Winter - Aftermovie"
-                  videoId="pM8BvWNd0R4"
+                  videoId="CIMq1W1dGSg"
                 />
               </DivideContainer>
             </section>
