@@ -120,7 +120,7 @@ const data = {
     },
     {
       title: "Utökat liftkort. ",
-      desc: "Vill du få ut maximalt av din skidåkning? Då kan du uppgradera ditt liftkort och få tillgång till hela Trois Vallees med 600 km pist!",
+      desc: "Vill du få ut maximalt av din skidåkning? Då kan du uppgradera ditt liftkort för en extra slant och få tillgång till hela liftsystemet!",
       icon: <PlusAdd width={70} height={70} />,
     },
     {
@@ -230,7 +230,7 @@ const data = {
         <>
           Vi i styrelsen kommer påminna er om både våra egna event och SkiVenues. Klicka på länken för att se eventschemat. Glöm inte att följa oss på ORBI och Instagram för att få de senaste uppdateringarna och eventuella ändringar i schemat!
           <br />
-          Nytt för resan 2026 är att vi kommer ha en Whatsapp-grupp där vi skickar ut information under själva resan.
+          Under resan kommer även skicka ut information via våra informationskanaler och Whatsapp.
           <br />
           <a style={{ color: "#1d4ed8" }} href="https://www.weekofwinter.se/mer/eventschema">
             {" "}Eventschema{" "}
