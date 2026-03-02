@@ -63,7 +63,7 @@ const data = {
   prices: [
     {
       title: "Flyg",
-      price: "11 799 kr",
+      price: "TBA",
       href: "https://group.skivenue.com/WOW",
       includes: [
         "Flyg tur och retur från Arlanda, inkl. transfer",
@@ -72,11 +72,11 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar hösten 2026",
     },
     {
       title: "Buss",
-      price: "9 299 kr",
+      price: "TBA",
       href: "https://group.skivenue.com/WOW",
       popular: true,
       includes: [
@@ -86,11 +86,11 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar hösten 2026",
     },
     {
       title: "Basic",
-      price: "7 799 kr",
+      price: "TBA",
       href: "https://group.skivenue.com/WOW",
       includes: [
         "Boende (enkel lägenhet med eget kök)",
@@ -98,7 +98,7 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar 25/9 kl. 12.30",
+      buttonSubtitle: "Bokningen öppnar hösten 2026",
     },
   ],
 
@@ -307,10 +307,10 @@ export default function HomePage() {
             {/* ÅRETS RESA */}
             <section id="arets-resa" className={s.section}>
               <Trip
-                title="Häng med på resan 2026!"
-                date="Vecka 4"
-                ticket="Bokningen öppnar 25/9 kl. 12.30."
-                place="Val Thorens"
+                title="Stay tuned inför resan 2027!"
+                date="TBA"
+                ticket="TBA"
+                place="TBA"
                 //placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
                 description={
                   <>
@@ -470,7 +470,7 @@ const ParallaxEffect = () => {
           sequence={[
             "En skidförening för Uppsalas studenter",
             1000,
-            `Vi ses i ${data.trip.destination.name}!`,
+            `Häng med på resan 2027!`,
             1000,
             "För studenter av studenter.",
             1000,
