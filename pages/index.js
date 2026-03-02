@@ -483,6 +483,7 @@ const ParallaxEffect = () => {
           repeat={Infinity}
           className={`${s.welcomeSubheading} h3`}
         />
+        {/*
         <BookButton
           title="Boka nu"
           subtitle={`Bokningen öppnar ${data.trip.bookingOpens}`}
@@ -491,6 +492,7 @@ const ParallaxEffect = () => {
           subTitleStyle={{ textShadow: `0 0 5px rgba(0, 0, 0, 0.7)` }}
           containerStyle={{marginTop: "1.5rem"}}
         />
+        */}
       </animated.div>
 
       <div className={s.coverMountain}>

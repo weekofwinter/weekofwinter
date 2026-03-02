@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 
 export default function BookButton(
   {
-    title="Boka nu",
+    title="Boka nu!",
     subtitle="",
     href,
     size=1,
