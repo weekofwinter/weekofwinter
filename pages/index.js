@@ -44,7 +44,7 @@ const data = {
     date: "Vecka 4",
     bookingOpens: "25/9 kl. 12.30",
     destination: {
-      name: "Val Thorens",
+      name: "Resan 2027",
       link: "https://maps.app.goo.gl/rAgnu1TDT8AmnQdM6",
     },
     description: <TripDescription/>,
@@ -57,7 +57,7 @@ const data = {
       { value: 600, desc: "Kilometer pist" },
       { value: 3230, desc: "Meter över havet" },
     ],
-    departureDate: new Date(2026, 0, 16, 16, 0, 0), // OBS: 0-indexed
+    departureDate: new Date(2027, 0, 22, 16, 0, 0), // OBS: 0-indexed
   },
 
   prices: [
