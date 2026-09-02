@@ -40,8 +40,8 @@ const data = {
         evenemang. Vårt syfte är att tillföra festligheter, kul och såklart skidåkning 
         till Uppsalas studentliv. Vi ser fram emot att hänga och skåla med er i Alperna. Vi ses där!`,
   trip: {
-    title: "Häng med på resan 2026!",
-    date: "Vecka 4",
+    title: "Häng med på resan 2027!",
+    date: "Vecka 3",
     bookingOpens: "25/9 kl. 12.30",
     destination: {
       name: "Resan 2027",
@@ -53,17 +53,17 @@ const data = {
       alt: "Images of Val-d'Isère",
     },
     stats: [
-      { value: 50, valueAfter: "+", desc: "Barer och klubbar" },
-      { value: 600, desc: "Kilometer pist" },
-      { value: 3230, desc: "Meter över havet" },
+      { value: 20, valueAfter: "+", desc: "Barer och klubbar" },
+      { value: 300, desc: "Kilometer pist" },
+      { value: 3456, desc: "Meter över havet" },
     ],
-    departureDate: new Date(2027, 0, 22, 16, 0, 0), // OBS: 0-indexed
+    departureDate: new Date(2027, 0, 15, 16, 0, 0), // OBS: 0-indexed
   },
 
   prices: [
     {
       title: "Flyg",
-      price: "TBA",
+      price: "13299:-",
       href: "https://group.skivenue.com/WOW",
       includes: [
         "Flyg tur och retur från Arlanda, inkl. transfer",
@@ -76,7 +76,7 @@ const data = {
     },
     {
       title: "Buss",
-      price: "TBA",
+      price: "10499:-",
       href: "https://group.skivenue.com/WOW",
       popular: true,
       includes: [
@@ -98,7 +98,7 @@ const data = {
         "Turistskatter",
         "Liftkort 6 dagar",
       ],
-      buttonSubtitle: "Bokningen öppnar hösten 2026",
+      buttonSubtitle: "Bokningen öppnar 25 september 2026",
     },
   ],
 
@@ -115,12 +115,12 @@ const data = {
     },
     {
       title: "Skidfrakt. ",
-      desc: "Har du egna skidor eller en snowboard som du vill ta med dig? Då är detta ett utmärkt val för endast 199 kr om du åker buss och 799 kr om du flyger.",
+      desc: "Har du egna skidor eller en snowboard som du vill ta med dig? Då är detta ett utmärkt val.",
       icon: <DeliveryTruck width={70} height={70} />,
     },
     {
-      title: "Utökat liftkort. ",
-      desc: "Vill du få ut maximalt av din skidåkning? Då kan du uppgradera ditt liftkort för en extra slant och få tillgång till hela liftsystemet!",
+      title: "Liftkort. ",
+      desc: "I liftkortet ingår tillgång till hela liftsystemet! Val D'isere och Tignes!",
       icon: <PlusAdd width={70} height={70} />,
     },
     {
@@ -308,9 +308,9 @@ export default function HomePage() {
             <section id="arets-resa" className={s.section}>
               <Trip
                 title="Stay tuned inför resan 2027!"
-                date="TBA"
-                ticket="TBA"
-                place="TBA"
+                date="Vecka 3"
+                ticket="Bokningen öppnar 25/9 kl 12.30"
+                place="Val D'isere"
                 //placeLink="https://maps.app.goo.gl/s6FFxx84DYuMnrsx7"
                 description={
                   <>
@@ -457,7 +457,8 @@ const ParallaxEffect = () => {
             priority
           />
         </animated.div>
-      ))}
+      ))}  
+
 
       <animated.div
         className={s.welcomeContainer}
@@ -466,6 +467,7 @@ const ParallaxEffect = () => {
         }}
       >
         <h1 className={s.welcomeHeading}>Week of Winter</h1>
+        <h2 className={s.welcomeSubSubHeading}>Val D'isere 2027</h2>
         <TypeAnimation
           sequence={[
             "En skidförening för Uppsalas studenter",
@@ -477,7 +479,8 @@ const ParallaxEffect = () => {
             "@weekofwinter",
             1000,
           ]}
-          speed={60}
+          speed={50}
+          deletionSpeed={65}
           wrapper="span"
           cursor={true}
           repeat={Infinity}
