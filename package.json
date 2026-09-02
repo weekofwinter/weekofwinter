@@ -1,11 +1,10 @@
 {
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "postbuild": "next-sitemap",
-    "start": "next start",
-    "analyze": "ANALYZE=true npm run build"
-  },
+  "dev": "next dev --webpack",
+  "build": "next build --webpack",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "@dotlottie/react-player": "^1.6.3",
     "@mdx-js/loader": "^2.3.0",
