@@ -6,21 +6,13 @@ import abro from "../public/image/sponsor/abro.jpg"
 import Image from 'next/image';
 
 const images = [
-  { 
-    alt: "Kang Poles" , 
-    href: "https://kangpoles.com/",
-    src: kang,
-  },
+  
   { 
     alt: "Skivenue", 
     href:"https://www.skivenue.se/",
     src: skivenue,
   },
-  { 
-    alt: "Åbro", 
-    href:"https://www.abro.se/",
-    src: abro,
-  },
+
 ];
 
 /**

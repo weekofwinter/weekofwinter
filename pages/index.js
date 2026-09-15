@@ -90,7 +90,7 @@ const data = {
     },
     {
       title: "Basic",
-      price: "TBA",
+      price: "8999:-",
       href: "https://group.skivenue.com/WOW",
       includes: [
         "Boende (enkel lägenhet med eget kök)",
