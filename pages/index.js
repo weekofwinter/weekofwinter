@@ -42,7 +42,7 @@ const data = {
   trip: {
     title: "Häng med på resan 2027!",
     date: "Vecka 3",
-    bookingOpens: "25/9 kl. 12.30",
+    bookingOpens: "25/9 kl. 12.45",
     destination: {
       name: "Resan 2027",
       link: "https://maps.app.goo.gl/rAgnu1TDT8AmnQdM6",
